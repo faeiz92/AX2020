@@ -1,0 +1,18 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+# SharpDevelop 4.4
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AX2020", "AX2020.csproj", "{229876B3-06B9-4373-B4A8-BB833BFD456E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{229876B3-06B9-4373-B4A8-BB833BFD456E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{229876B3-06B9-4373-B4A8-BB833BFD456E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{229876B3-06B9-4373-B4A8-BB833BFD456E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{229876B3-06B9-4373-B4A8-BB833BFD456E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,1010 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <Description>
+  </Description>
+  <Author>
+  </Author>
+  <PageHeight>11.7in</PageHeight>
+  <PageWidth>8.3in</PageWidth>
+  <DataSources>
+    <DataSource Name="DS1">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString>Server=(local)\SBGROUP; Password=ax2020sb; User ID=ax2020sb; Initial Catalog=SB_AX2020</ConnectString>
+        <IntegratedSecurity>false</IntegratedSecurity>
+      </ConnectionProperties>
+
+    </DataSource>
+  </DataSources>
+  <Width>7.5in</Width>
+  <TopMargin>.25in</TopMargin>
+  <LeftMargin>.25in</LeftMargin>
+  <RightMargin>.25in</RightMargin>
+  <BottomMargin>.25in</BottomMargin>
+  <DataSets>
+    <DataSet Name="Data">
+      <Query>
+        <DataSourceName>DS1</DataSourceName>
+        <CommandText>SELECT PRODC_DOCNO, PRODC_REPORTDATE, PRODC_BATCHNO, PRODC_MACHINE, PRODC_MACHINESPEED, PRODC_OPERATOR, PRODC_HELPER, PRODC_SUPERVISOR, PRODC_SHIFT, PRODC_DATE, PRODC_STOCKCODE, PRODC_STOCKDESC, PRODC_QTY, PRODC_UOM, PRODC_QTYREJECT, PRODC_TOTALROLL, PRODC_REMARK1, PRODC_REMARK2, PRODC_flag1, PRODC_FLAG2, PRODC_FLAG3, PRODC_FLAG4, PRODC_FLAG5, PRODC_FLAG6, PRODC_FLAG7, PRODC_FLAG8, PRODC_FLAGStatus, PRODC_ISSUEBY, PRODC_USER, PRODC_USEREMAIL, PRODC_USERPC, PRODC_USERDATETIME, PRODC_USERREVISION FROM TBL_PROD_RIBBON_CONSUME</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="PRODC_DOCNO">
+          <DataField>PRODC_DOCNO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="PRODC_REPORTDATE">
+          <DataField>PRODC_REPORTDATE</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="PRODC_BATCHNO">
+          <DataField>PRODC_BATCHNO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="PRODC_MACHINE">
+          <DataField>PRODC_MACHINE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="PRODC_MACHINESPEED">
+          <DataField>PRODC_MACHINESPEED</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="PRODC_OPERATOR">
+          <DataField>PRODC_OPERATOR</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="PRODC_HELPER">
+          <DataField>PRODC_HELPER</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="PRODC_SUPERVISOR">
+          <DataField>PRODC_SUPERVISOR</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="PRODC_SHIFT">
+          <DataField>PRODC_SHIFT</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="PRODC_DATE">
+          <DataField>PRODC_DATE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="PRODC_STOCKCODE">
+          <DataField>PRODC_STOCKCODE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="PRODC_STOCKDESC">
+          <DataField>PRODC_STOCKDESC</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="PRODC_QTY">
+          <DataField>PRODC_QTY</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="PRODC_UOM">
+          <DataField>PRODC_UOM</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="PRODC_QTYREJECT">
+          <DataField>PRODC_QTYREJECT</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="PRODC_TOTALROLL">
+          <DataField>PRODC_TOTALROLL</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="PRODC_REMARK1">
+          <DataField>PRODC_REMARK1</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="PRODC_REMARK2">
+          <DataField>PRODC_REMARK2</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="PRODC_flag1">
+          <DataField>PRODC_flag1</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="PRODC_FLAG2">
+          <DataField>PRODC_FLAG2</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="PRODC_FLAG3">
+          <DataField>PRODC_FLAG3</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="PRODC_FLAG4">
+          <DataField>PRODC_FLAG4</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="PRODC_FLAG5">
+          <DataField>PRODC_FLAG5</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="PRODC_FLAG6">
+          <DataField>PRODC_FLAG6</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="PRODC_FLAG7">
+          <DataField>PRODC_FLAG7</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="PRODC_FLAG8">
+          <DataField>PRODC_FLAG8</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="PRODC_FLAGStatus">
+          <DataField>PRODC_FLAGStatus</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="PRODC_ISSUEBY">
+          <DataField>PRODC_ISSUEBY</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="PRODC_USER">
+          <DataField>PRODC_USER</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="PRODC_USEREMAIL">
+          <DataField>PRODC_USEREMAIL</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="PRODC_USERPC">
+          <DataField>PRODC_USERPC</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="PRODC_USERDATETIME">
+          <DataField>PRODC_USERDATETIME</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="PRODC_USERREVISION">
+          <DataField>PRODC_USERREVISION</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="Data2">
+      <Query>
+        <DataSourceName>DS1</DataSourceName>
+        <CommandText>SELECT PROD_DOCNO, PROD_REPORTDATE, PROD_BATCHNO, PROD_MACHINE, PROD_MACHINESPEED, PROD_OPERATOR, PROD_HELPER, PROD_SUPERVISOR, PROD_SHIFT, PROD_DATE, PROD_STOCKCODE, PROD_STOCKDESC, PROD_QTY, PROD_UOM, PROD_QTYREJECT, PROD_TOTALROLL, PROD_REMARK1, PROD_REMARK2, PROD_FLAG1, PROD_FLAG2, PROD_FLAG3, PROD_FLAG4, PROD_FLAG5, PROD_FLAG6, PROD_FLAG7, PROD_FLAG8, PROD_FLAGStatus, PROD_ISSUEBY, PROD_USER, PROD_USEREMAIL, PROD_USERPC, PROD_USERDATETIME, PROD_USERREVISION FROM TBL_PROD_RIBBON_OUTPUT</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="PROD_DOCNO">
+          <DataField>PROD_DOCNO</DataField>
+          <TypeName>System.String</TypeName>
+        </Field>
+        <Field Name="PROD_REPORTDATE">
+          <DataField>PROD_REPORTDATE</DataField>
+          <TypeName>System.DateTime</TypeName>
+        </Field>
+        <Field Name="PROD_BATCHNO">
+          <DataField>PROD_BATCHNO</DataField>
+          <TypeName>System.String</TypeName>
+        </Field>
+        <Field Name="PROD_MACHINE">
+          <DataField>PROD_MACHINE</DataField>
+          <TypeName>System.String</TypeName>
+        </Field>
+        <Field Name="PROD_MACHINESPEED">
+          <DataField>PROD_MACHINESPEED</DataField>
+          <TypeName>System.Double</TypeName>
+        </Field>
+        <Field Name="PROD_OPERATOR">
+          <DataField>PROD_OPERATOR</DataField>
+          <TypeName>System.String</TypeName>
+        </Field>
+        <Field Name="PROD_HELPER">
+          <DataField>PROD_HELPER</DataField>
+          <TypeName>System.String</TypeName>
+        </Field>
+        <Field Name="PROD_SUPERVISOR">
+          <DataField>PROD_SUPERVISOR</DataField>
+          <TypeName>System.String</TypeName>
+        </Field>
+        <Field Name="PROD_SHIFT">
+          <DataField>PROD_SHIFT</DataField>
+          <TypeName>System.String</TypeName>
+        </Field>
+        <Field Name="PROD_DATE">
+          <DataField>PROD_DATE</DataField>
+          <TypeName>System.String</TypeName>
+        </Field>
+        <Field Name="PROD_STOCKCODE">
+          <DataField>PROD_STOCKCODE</DataField>
+          <TypeName>System.String</TypeName>
+        </Field>
+        <Field Name="PROD_STOCKDESC">
+          <DataField>PROD_STOCKDESC</DataField>
+          <TypeName>System.String</TypeName>
+        </Field>
+        <Field Name="PROD_QTY">
+          <DataField>PROD_QTY</DataField>
+          <TypeName>System.Double</TypeName>
+        </Field>
+        <Field Name="PROD_UOM">
+          <DataField>PROD_UOM</DataField>
+          <TypeName>System.String</TypeName>
+        </Field>
+        <Field Name="PROD_QTYREJECT">
+          <DataField>PROD_QTYREJECT</DataField>
+          <TypeName>System.Double</TypeName>
+        </Field>
+        <Field Name="PROD_TOTALROLL">
+          <DataField>PROD_TOTALROLL</DataField>
+          <TypeName>System.Double</TypeName>
+        </Field>
+        <Field Name="PROD_REMARK1">
+          <DataField>PROD_REMARK1</DataField>
+          <TypeName>System.String</TypeName>
+        </Field>
+        <Field Name="PROD_REMARK2">
+          <DataField>PROD_REMARK2</DataField>
+          <TypeName>System.String</TypeName>
+        </Field>
+        <Field Name="PROD_FLAG1">
+          <DataField>PROD_FLAG1</DataField>
+          <TypeName>System.String</TypeName>
+        </Field>
+        <Field Name="PROD_FLAG2">
+          <DataField>PROD_FLAG2</DataField>
+          <TypeName>System.String</TypeName>
+        </Field>
+        <Field Name="PROD_FLAG3">
+          <DataField>PROD_FLAG3</DataField>
+          <TypeName>System.String</TypeName>
+        </Field>
+        <Field Name="PROD_FLAG4">
+          <DataField>PROD_FLAG4</DataField>
+          <TypeName>System.String</TypeName>
+        </Field>
+        <Field Name="PROD_FLAG5">
+          <DataField>PROD_FLAG5</DataField>
+          <TypeName>System.String</TypeName>
+        </Field>
+        <Field Name="PROD_FLAG6">
+          <DataField>PROD_FLAG6</DataField>
+          <TypeName>System.String</TypeName>
+        </Field>
+        <Field Name="PROD_FLAG7">
+          <DataField>PROD_FLAG7</DataField>
+          <TypeName>System.String</TypeName>
+        </Field>
+        <Field Name="PROD_FLAG8">
+          <DataField>PROD_FLAG8</DataField>
+          <TypeName>System.String</TypeName>
+        </Field>
+        <Field Name="PROD_FLAGStatus">
+          <DataField>PROD_FLAGStatus</DataField>
+          <TypeName>System.String</TypeName>
+        </Field>
+        <Field Name="PROD_ISSUEBY">
+          <DataField>PROD_ISSUEBY</DataField>
+          <TypeName>System.String</TypeName>
+        </Field>
+        <Field Name="PROD_USER">
+          <DataField>PROD_USER</DataField>
+          <TypeName>System.String</TypeName>
+        </Field>
+        <Field Name="PROD_USEREMAIL">
+          <DataField>PROD_USEREMAIL</DataField>
+          <TypeName>System.String</TypeName>
+        </Field>
+        <Field Name="PROD_USERPC">
+          <DataField>PROD_USERPC</DataField>
+          <TypeName>System.String</TypeName>
+        </Field>
+        <Field Name="PROD_USERDATETIME">
+          <DataField>PROD_USERDATETIME</DataField>
+          <TypeName>System.DateTime</TypeName>
+        </Field>
+        <Field Name="PROD_USERREVISION">
+          <DataField>PROD_USERREVISION</DataField>
+          <TypeName>System.String</TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+  </DataSets>
+  <PageHeader>
+    <Height>.5in</Height>
+    <PrintOnFirstPage>true</PrintOnFirstPage>
+    <PrintOnLastPage>true</PrintOnLastPage>
+  </PageHeader>
+  <Body>
+    <ReportItems>
+      <Table Name="Table1">
+        <DataSetName>Data</DataSetName>
+        <NoRows>Query returned no rows!</NoRows>
+        <Style>
+          <BorderStyle>
+            <Default>Solid</Default>
+          </BorderStyle>
+        </Style>
+        <TableColumns>
+          <TableColumn>
+            <Width>56.6pt</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>64.4pt</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>59.6pt</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>57.3pt</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>62.7pt</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>65.1pt</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>60.0pt</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>68.3pt</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>64.3pt</Width>
+          </TableColumn>
+        </TableColumns>
+        <Header>
+          <TableRows>
+            <TableRow>
+              <Height>12 pt</Height>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="Textbox1">
+                      <Value>DOC NO</Value>
+                      <Style>
+                        <TextAlign>Center</TextAlign>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <FontWeight>Bold</FontWeight>
+                        <BorderColor />
+                        <BorderWidth />
+                      </Style>
+                    </Textbox>
+                  </ReportItems>
+                  <ColSpan>1</ColSpan>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="Textbox22">
+                      <Value>REPORT DATE</Value>
+                      <Style xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition">
+                        <TextAlign>Center</TextAlign>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <FontWeight>Bold</FontWeight>
+                        <BorderColor />
+                        <BorderWidth />
+                      </Style>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="Textbox4">
+                      <Value>PROD DATE</Value>
+                      <Style>
+                        <TextAlign>Center</TextAlign>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <FontWeight>Bold</FontWeight>
+                        <BorderColor />
+                        <BorderWidth />
+                      </Style>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="Textbox5">
+                      <Value>STOCKCODE</Value>
+                      <Style>
+                        <TextAlign>Center</TextAlign>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <FontWeight>Bold</FontWeight>
+                        <BorderColor />
+                        <BorderWidth />
+                      </Style>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="Textbox6">
+                      <Value>STOCKDESC</Value>
+                      <Style>
+                        <TextAlign>Center</TextAlign>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <FontWeight>Bold</FontWeight>
+                        <BorderColor />
+                        <BorderWidth />
+                      </Style>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="Textbox7">
+                      <Value>QUANTITY</Value>
+                      <Style>
+                        <TextAlign>Center</TextAlign>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <FontWeight>Bold</FontWeight>
+                        <BorderColor />
+                        <BorderWidth />
+                      </Style>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="Textbox8">
+                      <Value>UOM</Value>
+                      <Style>
+                        <TextAlign>Center</TextAlign>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <FontWeight>Bold</FontWeight>
+                        <BorderColor />
+                        <BorderWidth />
+                      </Style>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="Textbox9">
+                      <Value>QTY REJECT</Value>
+                      <Style>
+                        <TextAlign>Center</TextAlign>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <FontWeight>Bold</FontWeight>
+                        <BorderColor />
+                        <BorderWidth />
+                      </Style>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="Textbox10">
+                      <Value>TOTAL ROLL</Value>
+                      <Style>
+                        <TextAlign>Center</TextAlign>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <FontWeight>Bold</FontWeight>
+                        <BorderColor />
+                        <BorderWidth />
+                      </Style>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+            </TableRow>
+          </TableRows>
+          <RepeatOnNewPage>true</RepeatOnNewPage>
+        </Header>
+        <Details>
+          <TableRows>
+            <TableRow>
+              <Height>12 pt</Height>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="Textbox11">
+                      <Value>=Fields!PRODC_DOCNO.Value</Value>
+                      <CanGrow>true</CanGrow>
+                      <Style>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                      </Style>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="Textbox12">
+                      <Value>=Fields!PRODC_REPORTDATE.Value</Value>
+                      <CanGrow>true</CanGrow>
+                      <Style>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                      </Style>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="Textbox14">
+                      <Value>=Fields!PRODC_DATE.Value</Value>
+                      <CanGrow>true</CanGrow>
+                      <Style>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                      </Style>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="Textbox15">
+                      <Value>=Fields!PRODC_STOCKCODE.Value</Value>
+                      <CanGrow>true</CanGrow>
+                      <Style>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                      </Style>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="Textbox16">
+                      <Value>=Fields!PRODC_STOCKDESC.Value</Value>
+                      <CanGrow>true</CanGrow>
+                      <Style>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                      </Style>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="Textbox17">
+                      <Value>=Fields!PRODC_QTY.Value</Value>
+                      <CanGrow>true</CanGrow>
+                      <Style>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                      </Style>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="Textbox18">
+                      <Value>=Fields!PRODC_UOM.Value</Value>
+                      <CanGrow>true</CanGrow>
+                      <Style>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                      </Style>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="Textbox19">
+                      <Value>=Fields!PRODC_QTYREJECT.Value</Value>
+                      <CanGrow>true</CanGrow>
+                      <Style>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                      </Style>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="Textbox20">
+                      <Value>=Fields!PRODC_TOTALROLL.Value</Value>
+                      <CanGrow>true</CanGrow>
+                      <Style>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                      </Style>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+            </TableRow>
+          </TableRows>
+        </Details>
+        <Left>0.0pt</Left>
+        <Top>212.6pt</Top>
+        <Height>1in</Height>
+        <Width>1in</Width>
+      </Table>
+      <Table Name="Table2">
+        <DataSetName>Data2</DataSetName>
+        <NoRows>Query returned no rows!</NoRows>
+        <Style>
+          <BorderStyle>
+            <Default>Solid</Default>
+          </BorderStyle>
+          <BorderColor />
+          <BorderWidth />
+        </Style>
+        <TableColumns>
+          <TableColumn>
+            <Width>60.5pt</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>59.3pt</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>61.4pt</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>63.0pt</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>63.0pt</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>62.1pt</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>63.5pt</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>62.0pt</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>65.9pt</Width>
+          </TableColumn>
+        </TableColumns>
+        <Header>
+          <TableRows>
+            <TableRow>
+              <Height>12 pt</Height>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="Textbox2">
+                      <Value>DOCNO</Value>
+                      <Style>
+                        <TextAlign>Center</TextAlign>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <FontWeight>Bold</FontWeight>
+                        <BorderColor />
+                        <BorderWidth />
+                      </Style>
+                      <ZIndex>0</ZIndex>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="Textbox3">
+                      <Value>REPORT DATE</Value>
+                      <Style>
+                        <TextAlign>Center</TextAlign>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <FontWeight>Bold</FontWeight>
+                        <BorderColor />
+                        <BorderWidth />
+                      </Style>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="Textbox23">
+                      <Value>PROD DATE</Value>
+                      <Style>
+                        <TextAlign>Center</TextAlign>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <FontWeight>Bold</FontWeight>
+                        <BorderColor />
+                        <BorderWidth />
+                      </Style>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="Textbox24">
+                      <Value>STOCKCODE</Value>
+                      <Style>
+                        <TextAlign>Center</TextAlign>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <FontWeight>Bold</FontWeight>
+                        <BorderColor />
+                        <BorderWidth />
+                      </Style>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="Textbox25">
+                      <Value>STOCKDESC</Value>
+                      <Style>
+                        <TextAlign>Center</TextAlign>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <FontWeight>Bold</FontWeight>
+                        <BorderColor />
+                        <BorderWidth />
+                      </Style>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="Textbox26">
+                      <Value>QUANTITY</Value>
+                      <Style>
+                        <TextAlign>Center</TextAlign>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <FontWeight>Bold</FontWeight>
+                        <BorderColor />
+                        <BorderWidth />
+                      </Style>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="Textbox27">
+                      <Value>UOM</Value>
+                      <Style>
+                        <TextAlign>Center</TextAlign>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <FontWeight>Bold</FontWeight>
+                        <BorderColor />
+                        <BorderWidth />
+                      </Style>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="Textbox28">
+                      <Value>QTY REJECT</Value>
+                      <Style>
+                        <TextAlign>Center</TextAlign>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <FontWeight>Bold</FontWeight>
+                        <BorderColor />
+                        <BorderWidth />
+                      </Style>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="Textbox29">
+                      <Value>PROD_TOTALROLL</Value>
+                      <Style>
+                        <TextAlign>Center</TextAlign>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <FontWeight>Bold</FontWeight>
+                      </Style>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+            </TableRow>
+          </TableRows>
+          <RepeatOnNewPage>true</RepeatOnNewPage>
+        </Header>
+        <Details>
+          <TableRows>
+            <TableRow>
+              <Height>12 pt</Height>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="Textbox31">
+                      <Value>=Fields!PROD_DOCNO.Value</Value>
+                      <CanGrow>true</CanGrow>
+                      <Style>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                      </Style>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="Textbox32">
+                      <Value>=Fields!PROD_REPORTDATE.Value</Value>
+                      <CanGrow>true</CanGrow>
+                      <Style>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                      </Style>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="Textbox33">
+                      <Value>=Fields!PROD_DATE.Value</Value>
+                      <CanGrow>true</CanGrow>
+                      <Style>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                      </Style>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="Textbox35">
+                      <Value>=Fields!PROD_STOCKCODE.Value</Value>
+                      <CanGrow>true</CanGrow>
+                      <Style>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                      </Style>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="Textbox36">
+                      <Value>=Fields!PROD_STOCKDESC.Value</Value>
+                      <CanGrow>true</CanGrow>
+                      <Style>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                      </Style>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="Textbox37">
+                      <Value>=Fields!PROD_QTY.Value</Value>
+                      <CanGrow>true</CanGrow>
+                      <Style>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                      </Style>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="Textbox38">
+                      <Value>=Fields!PROD_UOM.Value</Value>
+                      <CanGrow>true</CanGrow>
+                      <Style>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                      </Style>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="Textbox39">
+                      <Value>=Fields!PROD_QTYREJECT.Value</Value>
+                      <CanGrow>true</CanGrow>
+                      <Style>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                      </Style>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="Textbox40">
+                      <Value>=Fields!PROD_TOTALROLL.Value</Value>
+                      <CanGrow>true</CanGrow>
+                      <Style>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                      </Style>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+            </TableRow>
+          </TableRows>
+        </Details>
+        <Left>0.0pt</Left>
+        <Top>66.1pt</Top>
+      </Table>
+      <Textbox Name="Textbox47">
+        <Height>22.53pt</Height>
+        <Width>156.58pt</Width>
+        <Value>RIBBON OUTPUT</Value>
+        <ZIndex>1</ZIndex>
+        <Left>226.60pt</Left>
+        <Top>23.38pt</Top>
+        <Style>
+          <BorderStyle />
+          <BorderColor />
+          <BorderWidth />
+          <FontSize>14pt</FontSize>
+          <TextAlign>Center</TextAlign>
+          <FontWeight>Bold</FontWeight>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox13">
+        <Height>13.50pt</Height>
+        <Width>136.20pt</Width>
+        <Value>RIBBON CONSUME</Value>
+        <ZIndex>1</ZIndex>
+        <Left>238.8pt</Left>
+        <Top>189.0pt</Top>
+        <Style>
+          <BorderStyle />
+          <BorderColor />
+          <BorderWidth />
+          <FontSize>14pt</FontSize>
+          <TextAlign>Center</TextAlign>
+          <FontWeight>Bold</FontWeight>
+        </Style>
+      </Textbox>
+    </ReportItems>
+    <Height>306.3pt</Height>
+  </Body>
+  <PageFooter>
+    <Height>14pt</Height>
+    <ReportItems>
+      <Textbox Name="Textbox34">
+        <Top>1pt</Top>
+        <Left>10pt</Left>
+        <Height>12pt</Height>
+        <Width>3in</Width>
+        <Value>=Globals!PageNumber + ' of ' + Globals!TotalPages</Value>
+        <Style>
+          <FontSize>10pt</FontSize>
+          <FontWeight>Normal</FontWeight>
+        </Style>
+      </Textbox>
+    </ReportItems>
+    <PrintOnFirstPage>true</PrintOnFirstPage>
+    <PrintOnLastPage>true</PrintOnLastPage>
+  </PageFooter>
+</Report>

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "Production_Bgrade3", "Production_Bgrade3\Production_Bgrade3.rptproj", "{F0253697-C2BA-49FC-95B8-27DC30568DCF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		DebugLocal|Default = DebugLocal|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F0253697-C2BA-49FC-95B8-27DC30568DCF}.Debug|Default.ActiveCfg = Debug
+		{F0253697-C2BA-49FC-95B8-27DC30568DCF}.Debug|Default.Build.0 = DebugLocal
+		{F0253697-C2BA-49FC-95B8-27DC30568DCF}.Debug|Default.Deploy.0 = DebugLocal
+		{F0253697-C2BA-49FC-95B8-27DC30568DCF}.DebugLocal|Default.ActiveCfg = DebugLocal
+		{F0253697-C2BA-49FC-95B8-27DC30568DCF}.DebugLocal|Default.Build.0 = DebugLocal
+		{F0253697-C2BA-49FC-95B8-27DC30568DCF}.Release|Default.ActiveCfg = Release
+		{F0253697-C2BA-49FC-95B8-27DC30568DCF}.Release|Default.Build.0 = Release
+		{F0253697-C2BA-49FC-95B8-27DC30568DCF}.Release|Default.Deploy.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,2462 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <Description>
+  </Description>
+  <Author>
+  </Author>
+  <PageHeight>11.7in</PageHeight>
+  <PageWidth>8.3in</PageWidth>
+  <Width>8.3in</Width>
+  <TopMargin>.5in</TopMargin>
+  <LeftMargin>.25in</LeftMargin>
+  <RightMargin>.25in</RightMargin>
+  <BottomMargin>.5in</BottomMargin>
+  <DataSets>
+    <DataSet Name="Data">
+      <Query>
+        <DataSourceName>DS1</DataSourceName>
+        <CommandText>SELECT JODATE, JODOCNO, JOSTOCKCODE, JOSTOCKDESC, JOSTOCKCOLOR, JOSTOCKBRAND, JOSTOCKWIDTH, JOSTOCKLENGTH, JOSTOCKMICRON, JOSTOCKCONVERSION, JOSTOCKWEIGHT, JOSTOCKWEIGHT2, JOSTOCKPCORE, JOSTOCKDENSITY, JOCUSTOMER, JOSTOCKQTYCTN, JOSTOCKQTYROLL, JOSTOCPACKINGA, JOSTOCPACKINGB, JOSTOCPACKINGC, JOSTOCPACKINGD, JOSTOCPACKING1, JOSTOCPACKING2, JOSTOCPACKING3, JOSTOCPACKING4, JOSTOCPACKING5, JOSTOCPACKING6, JOSTOCPACKING7, JOSTOCPACKING8, JOSTOCPACKING9, JOSTOCPACKING10, PROD_DATE, JOETDDATE, PROD_OPERATOR, PROD_HELPER, PROD_MACHINE, PROD_QTYCTN, PROD_QTYROLL, PROD_TOTALROLL, PROD_LOTNO, PROD_BATCHNO, JOPRODREMARK0a, JOPRODREMARK0b, JOPRODREMARK0c, JOPRODREMARK0d, JOPRODJRLENGTH, JOPRODJR1, JOPRODJR2, JOPRODREMARK1a, JOPRODREMARK1b, JOPRODREMARK1c, JOPRODREMARK1d, JOPRODPCORELENGTH, JOPRODREMARK3, JOPRODREMARK4, JOPRODREMARK5, JOISSUEBY, JOUSERDATETIME, PROD_LINE FROM TBL_PROD_CONV_JO_PACKING_LIST_TEMP</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="JODATE">
+          <DataField>JODATE</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="JODOCNO">
+          <DataField>JODOCNO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="JOSTOCKCODE">
+          <DataField>JOSTOCKCODE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="JOSTOCKDESC">
+          <DataField>JOSTOCKDESC</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="JOSTOCKCOLOR">
+          <DataField>JOSTOCKCOLOR</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="JOSTOCKBRAND">
+          <DataField>JOSTOCKBRAND</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="JOSTOCKWIDTH">
+          <DataField>JOSTOCKWIDTH</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="JOSTOCKLENGTH">
+          <DataField>JOSTOCKLENGTH</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="JOSTOCKMICRON">
+          <DataField>JOSTOCKMICRON</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="JOSTOCKCONVERSION">
+          <DataField>JOSTOCKCONVERSION</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="JOSTOCKWEIGHT">
+          <DataField>JOSTOCKWEIGHT</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="JOSTOCKWEIGHT2">
+          <DataField>JOSTOCKWEIGHT2</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="JOSTOCKPCORE">
+          <DataField>JOSTOCKPCORE</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="JOSTOCKDENSITY">
+          <DataField>JOSTOCKDENSITY</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="JOCUSTOMER">
+          <DataField>JOCUSTOMER</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="JOSTOCKQTYCTN">
+          <DataField>JOSTOCKQTYCTN</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="JOSTOCKQTYROLL">
+          <DataField>JOSTOCKQTYROLL</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="JOSTOCPACKINGA">
+          <DataField>JOSTOCPACKINGA</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="JOSTOCPACKINGB">
+          <DataField>JOSTOCPACKINGB</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="JOSTOCPACKINGC">
+          <DataField>JOSTOCPACKINGC</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="JOSTOCPACKINGD">
+          <DataField>JOSTOCPACKINGD</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="JOSTOCPACKING1">
+          <DataField>JOSTOCPACKING1</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="JOSTOCPACKING2">
+          <DataField>JOSTOCPACKING2</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="JOSTOCPACKING3">
+          <DataField>JOSTOCPACKING3</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="JOSTOCPACKING4">
+          <DataField>JOSTOCPACKING4</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="JOSTOCPACKING5">
+          <DataField>JOSTOCPACKING5</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="JOSTOCPACKING6">
+          <DataField>JOSTOCPACKING6</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="JOSTOCPACKING7">
+          <DataField>JOSTOCPACKING7</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="JOSTOCPACKING8">
+          <DataField>JOSTOCPACKING8</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="JOSTOCPACKING9">
+          <DataField>JOSTOCPACKING9</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="JOSTOCPACKING10">
+          <DataField>JOSTOCPACKING10</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="PROD_DATE">
+          <DataField>PROD_DATE</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="JOETDDATE">
+          <DataField>JOETDDATE</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="PROD_OPERATOR">
+          <DataField>PROD_OPERATOR</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="PROD_HELPER">
+          <DataField>PROD_HELPER</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="PROD_MACHINE">
+          <DataField>PROD_MACHINE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="PROD_QTYCTN">
+          <DataField>PROD_QTYCTN</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="PROD_QTYROLL">
+          <DataField>PROD_QTYROLL</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="PROD_TOTALROLL">
+          <DataField>PROD_TOTALROLL</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="PROD_LOTNO">
+          <DataField>PROD_LOTNO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="PROD_BATCHNO">
+          <DataField>PROD_BATCHNO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="JOPRODREMARK0a">
+          <DataField>JOPRODREMARK0a</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="JOPRODREMARK0b">
+          <DataField>JOPRODREMARK0b</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="JOPRODREMARK0c">
+          <DataField>JOPRODREMARK0c</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="JOPRODREMARK0d">
+          <DataField>JOPRODREMARK0d</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="JOPRODJRLENGTH">
+          <DataField>JOPRODJRLENGTH</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="JOPRODJR1">
+          <DataField>JOPRODJR1</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="JOPRODJR2">
+          <DataField>JOPRODJR2</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="JOPRODREMARK1a">
+          <DataField>JOPRODREMARK1a</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="JOPRODREMARK1b">
+          <DataField>JOPRODREMARK1b</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="JOPRODREMARK1c">
+          <DataField>JOPRODREMARK1c</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="JOPRODREMARK1d">
+          <DataField>JOPRODREMARK1d</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="JOPRODPCORELENGTH">
+          <DataField>JOPRODPCORELENGTH</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="JOPRODREMARK3">
+          <DataField>JOPRODREMARK3</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="JOPRODREMARK4">
+          <DataField>JOPRODREMARK4</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="JOPRODREMARK5">
+          <DataField>JOPRODREMARK5</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="JOISSUEBY">
+          <DataField>JOISSUEBY</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="JOUSERDATETIME">
+          <DataField>JOUSERDATETIME</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="PROD_LINE">
+          <DataField>PROD_LINE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+  </DataSets>
+  <PageHeader>
+    <Height>22.9pt</Height>
+    <ReportItems>
+      <Textbox Name="Textbox54">
+        <Height>14.98pt</Height>
+        <Width>563.37pt</Width>
+        <Value>SB GROUP OF COMPANIES (SB-OF-SLI-01.02)</Value>
+        <ZIndex>1</ZIndex>
+        <Left>0.0pt</Left>
+        <Top>0.0pt</Top>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <TextAlign>Center</TextAlign>
+          <FontWeight>Bold</FontWeight>
+          <BorderStyle />
+          <BorderColor />
+          <BorderWidth />
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox11">
+        <Height>18.12pt</Height>
+        <Width>563.37pt</Width>
+        <Value>PRODUCTION PACKING LIST (CONVERTING)</Value>
+        <ZIndex>1</ZIndex>
+        <Left>0.0pt</Left>
+        <Top>10.4pt</Top>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <FontWeight>Bold</FontWeight>
+          <TextAlign>Center</TextAlign>
+        </Style>
+      </Textbox>
+    </ReportItems>
+    <PrintOnFirstPage>true</PrintOnFirstPage>
+    <PrintOnLastPage>true</PrintOnLastPage>
+  </PageHeader>
+  <Body>
+    <Height>760.9pt</Height>
+    <ReportItems>
+      <List Name="List1">
+        <DataSetName>Data</DataSetName>
+        <Height>24pt</Height>
+        <NoRows>Query returned no rows!</NoRows>
+        <ReportItems>
+          <Textbox Name="JODATE">
+            <Top>0.0pt</Top>
+            <Left>106.9pt</Left>
+            <Width>170.29pt</Width>
+            <Height>20pt</Height>
+            <Value>=Format(Fields!JODATE.Value, "dd/MM/yyyy")</Value>
+            <CanGrow>false</CanGrow>
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <TextAlign>Left</TextAlign>
+              <BorderStyle>
+                <Default>Solid</Default>
+                <Left>Solid</Left>
+                <Right>Solid</Right>
+                <Top>Solid</Top>
+                <Bottom>Solid</Bottom>
+              </BorderStyle>
+              <BorderColor />
+              <BorderWidth />
+              <VerticalAlign>Middle</VerticalAlign>
+              <FontSize>8pt</FontSize>
+            </Style>
+          </Textbox>
+          <Textbox Name="JOSTOCKCODE">
+            <Top>20.0pt</Top>
+            <Left>106.9pt</Left>
+            <Width>170.29pt</Width>
+            <Height>40pt</Height>
+            <Value>=Fields!JOSTOCKCODE.Value</Value>
+            <CanGrow>false</CanGrow>
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <FontSize>8pt</FontSize>
+              <TextAlign>Left</TextAlign>
+              <VerticalAlign>Middle</VerticalAlign>
+              <BorderStyle>
+                <Default>Solid</Default>
+                <Left>Solid</Left>
+                <Right>Solid</Right>
+                <Top>Solid</Top>
+                <Bottom>Solid</Bottom>
+              </BorderStyle>
+              <BorderColor />
+              <BorderWidth />
+            </Style>
+          </Textbox>
+          <Textbox Name="JOSTOCKCOLOR">
+            <Top>60.0pt</Top>
+            <Left>106.9pt</Left>
+            <Width>170.29pt</Width>
+            <Height>20pt</Height>
+            <Value>=Fields!JOSTOCKCOLOR.Value</Value>
+            <CanGrow>false</CanGrow>
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <FontSize>8pt</FontSize>
+              <TextAlign>Left</TextAlign>
+              <VerticalAlign>Middle</VerticalAlign>
+              <BorderStyle>
+                <Default>Solid</Default>
+                <Left>Solid</Left>
+                <Right>Solid</Right>
+                <Top>Solid</Top>
+                <Bottom>Solid</Bottom>
+              </BorderStyle>
+              <BorderColor />
+              <BorderWidth />
+            </Style>
+          </Textbox>
+          <Textbox Name="JOSTOCKBRAND">
+            <Top>80.0pt</Top>
+            <Left>106.9pt</Left>
+            <Width>170.29pt</Width>
+            <Height>20pt</Height>
+            <Value>=Fields!JOSTOCKBRAND.Value</Value>
+            <CanGrow>false</CanGrow>
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <FontSize>8pt</FontSize>
+              <TextAlign>Left</TextAlign>
+              <VerticalAlign>Middle</VerticalAlign>
+              <BorderStyle>
+                <Default>Solid</Default>
+                <Left>Solid</Left>
+                <Right>Solid</Right>
+                <Top>Solid</Top>
+                <Bottom>Solid</Bottom>
+              </BorderStyle>
+              <BorderColor />
+              <BorderWidth />
+            </Style>
+          </Textbox>
+          <Textbox Name="JOSTOCKWIDTH">
+            <Top>100.0pt</Top>
+            <Left>106.9pt</Left>
+            <Width>40.15pt</Width>
+            <Height>20pt</Height>
+            <Value>=Fields!JOSTOCKWIDTH.Value</Value>
+            <CanGrow>false</CanGrow>
+            <Style>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingLeft>2pt</PaddingLeft>
+              <TextAlign>Left</TextAlign>
+              <FontSize>8pt</FontSize>
+              <VerticalAlign>Middle</VerticalAlign>
+              <BorderStyle>
+                <Default>None</Default>
+                <Left>None</Left>
+                <Right>None</Right>
+                <Top>Solid</Top>
+                <Bottom>Solid</Bottom>
+              </BorderStyle>
+              <BorderColor />
+              <BorderWidth />
+            </Style>
+          </Textbox>
+          <Textbox Name="JOSTOCKLENGTH">
+            <Top>100.0pt</Top>
+            <Left>188.0pt</Left>
+            <Width>40pt</Width>
+            <Height>20pt</Height>
+            <Value>=Fields!JOSTOCKLENGTH.Value</Value>
+            <CanGrow>false</CanGrow>
+            <Style>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingLeft>2pt</PaddingLeft>
+              <TextAlign>Left</TextAlign>
+              <FontSize>8pt</FontSize>
+              <VerticalAlign>Middle</VerticalAlign>
+              <BorderStyle>
+                <Default>None</Default>
+                <Left>None</Left>
+                <Right>None</Right>
+                <Top>Solid</Top>
+                <Bottom>Solid</Bottom>
+              </BorderStyle>
+              <BorderColor />
+              <BorderWidth />
+            </Style>
+          </Textbox>
+          <Textbox Name="JOSTOCKMICRON">
+            <Top>100.0pt</Top>
+            <Left>277.1pt</Left>
+            <Width>40pt</Width>
+            <Height>20pt</Height>
+            <Value>=Fields!JOSTOCKMICRON.Value</Value>
+            <CanGrow>false</CanGrow>
+            <Style>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingLeft>2pt</PaddingLeft>
+              <TextAlign>Left</TextAlign>
+              <FontSize>8pt</FontSize>
+              <VerticalAlign>Middle</VerticalAlign>
+              <BorderStyle>
+                <Default>None</Default>
+                <Left>None</Left>
+                <Right>None</Right>
+                <Top>Solid</Top>
+                <Bottom>Solid</Bottom>
+              </BorderStyle>
+              <BorderColor />
+              <BorderWidth />
+            </Style>
+          </Textbox>
+          <Textbox Name="JOSTOCKCONVERSION">
+            <Top>100.0pt</Top>
+            <Left>387.1pt</Left>
+            <Width>60pt</Width>
+            <Height>20pt</Height>
+            <Value>=Fields!JOSTOCKCONVERSION.Value</Value>
+            <CanGrow>false</CanGrow>
+            <Style>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingLeft>2pt</PaddingLeft>
+              <TextAlign>Left</TextAlign>
+              <BorderStyle>
+                <Default>None</Default>
+                <Left>None</Left>
+                <Right>None</Right>
+                <Top>Solid</Top>
+                <Bottom>Solid</Bottom>
+              </BorderStyle>
+              <BorderColor />
+              <BorderWidth />
+              <FontSize>8pt</FontSize>
+              <VerticalAlign>Middle</VerticalAlign>
+            </Style>
+          </Textbox>
+          <Textbox Name="JOSTOCKWEIGHT">
+            <Top>80.0pt</Top>
+            <Left>368.2pt</Left>
+            <Width>180pt</Width>
+            <Height>20pt</Height>
+            <Value>=Fields!JOSTOCKWEIGHT.Value + " " + Fields!JOSTOCKWEIGHT2.Value</Value>
+            <CanGrow>false</CanGrow>
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <FontSize>8pt</FontSize>
+              <TextAlign>Left</TextAlign>
+              <VerticalAlign>Middle</VerticalAlign>
+              <BorderStyle>
+                <Default>Solid</Default>
+                <Left>Solid</Left>
+                <Right>Solid</Right>
+                <Top>Solid</Top>
+                <Bottom>Solid</Bottom>
+              </BorderStyle>
+              <BorderColor />
+              <BorderWidth />
+            </Style>
+          </Textbox>
+          <Textbox Name="JODOCNO">
+            <Top>0.0pt</Top>
+            <Left>368.2pt</Left>
+            <Width>180pt</Width>
+            <Height>20pt</Height>
+            <Value>=Fields!JODOCNO.Value</Value>
+            <CanGrow>false</CanGrow>
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <FontSize>8pt</FontSize>
+              <TextAlign>Left</TextAlign>
+              <VerticalAlign>Middle</VerticalAlign>
+              <BorderStyle>
+                <Default>Solid</Default>
+                <Left>Solid</Left>
+                <Right>Solid</Right>
+                <Top>Solid</Top>
+                <Bottom>Solid</Bottom>
+              </BorderStyle>
+              <BorderColor />
+              <BorderWidth />
+            </Style>
+          </Textbox>
+          <Textbox Name="JOCUSTOMER">
+            <Top>20.0pt</Top>
+            <Left>368.2pt</Left>
+            <Width>179.86pt</Width>
+            <Height>40pt</Height>
+            <Value>=Fields!JOCUSTOMER.Value</Value>
+            <CanGrow>false</CanGrow>
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <FontSize>8pt</FontSize>
+              <TextAlign>Left</TextAlign>
+              <VerticalAlign>Middle</VerticalAlign>
+              <BorderStyle>
+                <Default>Solid</Default>
+                <Left>Solid</Left>
+                <Right>Solid</Right>
+                <Top>Solid</Top>
+                <Bottom>Solid</Bottom>
+              </BorderStyle>
+              <BorderColor />
+              <BorderWidth />
+            </Style>
+          </Textbox>
+          <Textbox Name="JOSTOCKQTYCTN">
+            <Top>60.0pt</Top>
+            <Left>368.2pt</Left>
+            <Width>50pt</Width>
+            <Height>20pt</Height>
+            <Value>=Fields!JOSTOCKQTYCTN.Value</Value>
+            <CanGrow>false</CanGrow>
+            <Style>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingLeft>2pt</PaddingLeft>
+              <TextAlign>Left</TextAlign>
+              <FontSize>8pt</FontSize>
+              <VerticalAlign>Middle</VerticalAlign>
+              <BorderStyle>
+                <Default>None</Default>
+                <Left>Solid</Left>
+                <Right>None</Right>
+                <Top>Solid</Top>
+                <Bottom>Solid</Bottom>
+              </BorderStyle>
+              <BorderColor />
+              <BorderWidth />
+            </Style>
+          </Textbox>
+          <Textbox Name="JOSTOCKQTYROLL">
+            <Top>60.0pt</Top>
+            <Left>458.13pt</Left>
+            <Width>50pt</Width>
+            <Height>20pt</Height>
+            <Value>=Fields!JOSTOCKQTYROLL.Value</Value>
+            <CanGrow>false</CanGrow>
+            <Style>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingLeft>2pt</PaddingLeft>
+              <TextAlign>Left</TextAlign>
+              <FontSize>8pt</FontSize>
+              <VerticalAlign>Middle</VerticalAlign>
+              <BorderStyle>
+                <Default>None</Default>
+                <Left>Solid</Left>
+                <Right>None</Right>
+                <Top>Solid</Top>
+                <Bottom>Solid</Bottom>
+              </BorderStyle>
+              <BorderColor />
+              <BorderWidth />
+            </Style>
+          </Textbox>
+          <Textbox Name="JOSTOCPACKINGA">
+            <Top>120.0pt</Top>
+            <Left>106.9pt</Left>
+            <Width>110pt</Width>
+            <Height>20pt</Height>
+            <Value>=Fields!JOSTOCPACKINGA.Value</Value>
+            <CanGrow>false</CanGrow>
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <FontSize>8pt</FontSize>
+              <TextAlign>Left</TextAlign>
+              <VerticalAlign>Middle</VerticalAlign>
+              <BorderStyle>
+                <Default>Solid</Default>
+                <Left>Solid</Left>
+                <Right>Solid</Right>
+                <Top>Solid</Top>
+                <Bottom>Solid</Bottom>
+              </BorderStyle>
+              <BorderColor />
+              <BorderWidth />
+            </Style>
+          </Textbox>
+          <Textbox Name="JOSTOCPACKINGB">
+            <Top>120.0pt</Top>
+            <Left>216.9pt</Left>
+            <Width>110pt</Width>
+            <Height>20pt</Height>
+            <Value>=Fields!JOSTOCPACKINGB.Value</Value>
+            <CanGrow>false</CanGrow>
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <FontSize>8pt</FontSize>
+              <TextAlign>Left</TextAlign>
+              <VerticalAlign>Middle</VerticalAlign>
+              <BorderStyle>
+                <Default>Solid</Default>
+                <Left>Solid</Left>
+                <Right>Solid</Right>
+                <Top>Solid</Top>
+                <Bottom>Solid</Bottom>
+              </BorderStyle>
+              <BorderColor />
+              <BorderWidth />
+            </Style>
+          </Textbox>
+          <Textbox Name="JOSTOCPACKINGC">
+            <Top>120.0pt</Top>
+            <Left>326.9pt</Left>
+            <Width>110pt</Width>
+            <Height>20pt</Height>
+            <Value>=Fields!JOSTOCPACKINGC.Value</Value>
+            <CanGrow>false</CanGrow>
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <FontSize>8pt</FontSize>
+              <TextAlign>Left</TextAlign>
+              <VerticalAlign>Middle</VerticalAlign>
+              <BorderStyle>
+                <Default>Solid</Default>
+                <Left>Solid</Left>
+                <Right>Solid</Right>
+                <Top>Solid</Top>
+                <Bottom>Solid</Bottom>
+              </BorderStyle>
+              <BorderColor />
+              <BorderWidth />
+            </Style>
+          </Textbox>
+          <Textbox Name="JOSTOCPACKINGD">
+            <Top>120.0pt</Top>
+            <Left>436.9pt</Left>
+            <Width>111.27pt</Width>
+            <Height>20pt</Height>
+            <Value>=Fields!JOSTOCPACKINGD.Value</Value>
+            <CanGrow>false</CanGrow>
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <FontSize>8pt</FontSize>
+              <TextAlign>Left</TextAlign>
+              <VerticalAlign>Middle</VerticalAlign>
+              <BorderStyle>
+                <Default>Solid</Default>
+                <Left>Solid</Left>
+                <Right>Solid</Right>
+                <Top>Solid</Top>
+                <Bottom>Solid</Bottom>
+              </BorderStyle>
+              <BorderColor />
+              <BorderWidth />
+            </Style>
+          </Textbox>
+          <Textbox Name="JOSTOCPACKING1">
+            <Top>140.0pt</Top>
+            <Left>106.9pt</Left>
+            <Width>441.27pt</Width>
+            <Height>100pt</Height>
+            <Value>=Fields!JOSTOCPACKING1.Value</Value>
+            <CanGrow>false</CanGrow>
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <FontSize>8pt</FontSize>
+              <TextAlign>Left</TextAlign>
+              <VerticalAlign>Middle</VerticalAlign>
+              <BorderStyle>
+                <Default>Solid</Default>
+                <Left>Solid</Left>
+                <Right>Solid</Right>
+                <Top>Solid</Top>
+                <Bottom>Solid</Bottom>
+              </BorderStyle>
+              <BorderColor />
+              <BorderWidth />
+            </Style>
+          </Textbox>
+          <Textbox Name="JOSTOCPACKING2">
+            <Top>240.0pt</Top>
+            <Left>106.9pt</Left>
+            <Width>441.27pt</Width>
+            <Height>80pt</Height>
+            <Value>=Fields!JOSTOCPACKING2.Value</Value>
+            <CanGrow>false</CanGrow>
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <FontSize>8pt</FontSize>
+              <TextAlign>Left</TextAlign>
+              <VerticalAlign>Middle</VerticalAlign>
+              <BorderStyle>
+                <Default>Solid</Default>
+                <Left>Solid</Left>
+                <Right>Solid</Right>
+                <Top>Solid</Top>
+                <Bottom>Solid</Bottom>
+              </BorderStyle>
+              <BorderColor />
+              <BorderWidth />
+            </Style>
+          </Textbox>
+          <Textbox Name="JOSTOCPACKING9">
+            <Top>320.0pt</Top>
+            <Left>106.9pt</Left>
+            <Width>441.27pt</Width>
+            <Height>20pt</Height>
+            <Value>=Fields!JOSTOCPACKING9.Value</Value>
+            <CanGrow>false</CanGrow>
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <FontSize>8pt</FontSize>
+              <TextAlign>Left</TextAlign>
+              <VerticalAlign>Middle</VerticalAlign>
+              <BorderStyle>
+                <Default>Solid</Default>
+                <Left>Solid</Left>
+                <Right>Solid</Right>
+                <Top>Solid</Top>
+                <Bottom>Solid</Bottom>
+              </BorderStyle>
+              <BorderColor />
+              <BorderWidth />
+            </Style>
+          </Textbox>
+          <Textbox Name="JOSTOCPACKING10">
+            <Top>340.0pt</Top>
+            <Left>106.9pt</Left>
+            <Width>441.27pt</Width>
+            <Height>20pt</Height>
+            <Value>=Fields!JOSTOCPACKING10.Value</Value>
+            <CanGrow>false</CanGrow>
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <FontSize>8pt</FontSize>
+              <TextAlign>Left</TextAlign>
+              <VerticalAlign>Middle</VerticalAlign>
+              <BorderStyle>
+                <Default>Solid</Default>
+                <Left>Solid</Left>
+                <Right>Solid</Right>
+                <Top>Solid</Top>
+                <Bottom>Solid</Bottom>
+              </BorderStyle>
+              <BorderColor />
+              <BorderWidth />
+            </Style>
+          </Textbox>
+          <Textbox Name="PROD_DATE">
+            <Top>360.0pt</Top>
+            <Left>106.9pt</Left>
+            <Width>170.29pt</Width>
+            <Height>20pt</Height>
+            <Value>=Format(Fields!PROD_DATE.Value, "dd/MM/yyyy")</Value>
+            <CanGrow>false</CanGrow>
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <FontSize>8pt</FontSize>
+              <TextAlign>Left</TextAlign>
+              <VerticalAlign>Middle</VerticalAlign>
+              <BorderStyle>
+                <Default>Solid</Default>
+                <Left>Solid</Left>
+                <Right>Solid</Right>
+                <Top>Solid</Top>
+                <Bottom>Solid</Bottom>
+              </BorderStyle>
+              <BorderColor />
+              <BorderWidth />
+            </Style>
+          </Textbox>
+          <Textbox Name="PROD_OPERATOR">
+            <Top>380.0pt</Top>
+            <Left>106.9pt</Left>
+            <Width>170.29pt</Width>
+            <Height>20pt</Height>
+            <Value>=Fields!PROD_OPERATOR.Value</Value>
+            <CanGrow>false</CanGrow>
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <FontSize>8pt</FontSize>
+              <TextAlign>Left</TextAlign>
+              <VerticalAlign>Middle</VerticalAlign>
+              <BorderStyle>
+                <Default>Solid</Default>
+                <Left>Solid</Left>
+                <Right>Solid</Right>
+                <Top>Solid</Top>
+                <Bottom>Solid</Bottom>
+              </BorderStyle>
+              <BorderColor />
+              <BorderWidth />
+            </Style>
+          </Textbox>
+          <Textbox Name="PROD_HELPER">
+            <Top>380.0pt</Top>
+            <Left>368.2pt</Left>
+            <Width>180pt</Width>
+            <Height>20pt</Height>
+            <Value>=Fields!PROD_HELPER.Value</Value>
+            <CanGrow>false</CanGrow>
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <FontSize>8pt</FontSize>
+              <TextAlign>Left</TextAlign>
+              <VerticalAlign>Middle</VerticalAlign>
+              <BorderStyle>
+                <Default>Solid</Default>
+                <Left>Solid</Left>
+                <Right>Solid</Right>
+                <Top>Solid</Top>
+                <Bottom>Solid</Bottom>
+              </BorderStyle>
+              <BorderColor />
+              <BorderWidth />
+            </Style>
+          </Textbox>
+          <Textbox Name="PROD_MACHINE">
+            <Top>400.0pt</Top>
+            <Left>468.2pt</Left>
+            <Width>80pt</Width>
+            <Height>20pt</Height>
+            <Value>=Fields!PROD_MACHINE.Value</Value>
+            <CanGrow>false</CanGrow>
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <FontSize>8pt</FontSize>
+              <TextAlign>Left</TextAlign>
+              <VerticalAlign>Middle</VerticalAlign>
+              <BorderStyle>
+                <Default>Solid</Default>
+                <Left>Solid</Left>
+                <Right>Solid</Right>
+                <Top>Solid</Top>
+                <Bottom>Solid</Bottom>
+              </BorderStyle>
+              <BorderColor />
+              <BorderWidth />
+            </Style>
+          </Textbox>
+          <Textbox Name="JOETDDATE">
+            <Top>360.0pt</Top>
+            <Left>368.2pt</Left>
+            <Width>180pt</Width>
+            <Height>20pt</Height>
+            <Value>=Format(Fields!JOETDDATE.Value, "dd/MM/yyyy")</Value>
+            <CanGrow>false</CanGrow>
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <FontSize>8pt</FontSize>
+              <TextAlign>Left</TextAlign>
+              <VerticalAlign>Middle</VerticalAlign>
+              <BorderStyle>
+                <Default>Solid</Default>
+                <Left>Solid</Left>
+                <Right>Solid</Right>
+                <Top>Solid</Top>
+                <Bottom>Solid</Bottom>
+              </BorderStyle>
+              <BorderColor />
+              <BorderWidth />
+            </Style>
+          </Textbox>
+          <Textbox Name="PROD_QTYCTN">
+            <Top>400.0pt</Top>
+            <Left>106.9pt</Left>
+            <Width>80pt</Width>
+            <Height>20pt</Height>
+            <Value>=Fields!PROD_QTYCTN.Value</Value>
+            <CanGrow>false</CanGrow>
+            <Style>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingLeft>2pt</PaddingLeft>
+              <TextAlign>Left</TextAlign>
+              <FontSize>8pt</FontSize>
+              <VerticalAlign>Middle</VerticalAlign>
+              <BorderStyle>
+                <Default>None</Default>
+                <Left>Solid</Left>
+                <Right>None</Right>
+                <Top>Solid</Top>
+                <Bottom>Solid</Bottom>
+              </BorderStyle>
+              <BorderColor />
+              <BorderWidth />
+            </Style>
+          </Textbox>
+          <Textbox Name="PROD_QTYROLL">
+            <Top>400.0pt</Top>
+            <Left>180pt</Left>
+            <Width>45pt</Width>
+            <Height>20pt</Height>
+            <Value>=Fields!PROD_QTYROLL.Value</Value>
+            <CanGrow>false</CanGrow>
+            <Style>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingLeft>2pt</PaddingLeft>
+              <TextAlign>Left</TextAlign>
+              <FontSize>8pt</FontSize>
+              <VerticalAlign>Middle</VerticalAlign>
+              <BorderStyle>
+                <Default>None</Default>
+                <Left>Solid</Left>
+                <Right>None</Right>
+                <Top>Solid</Top>
+                <Bottom>Solid</Bottom>
+              </BorderStyle>
+              <BorderColor />
+              <BorderWidth />
+            </Style>
+          </Textbox>
+          <Textbox Name="PROD_TOTALROLL">
+            <Top>400.0pt</Top>
+            <Left>255.1pt</Left>
+            <Width>110.12pt</Width>
+            <Height>20pt</Height>
+            <Value>="TOTAL " + Fields!PROD_TOTALROLL.Value + " ROLL"</Value>
+            <CanGrow>false</CanGrow>
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <FontSize>8pt</FontSize>
+              <TextAlign>Left</TextAlign>
+              <VerticalAlign>Middle</VerticalAlign>
+              <BorderStyle>
+                <Default>Solid</Default>
+                <Left>Solid</Left>
+                <Right>None</Right>
+                <Top>Solid</Top>
+                <Bottom>Solid</Bottom>
+              </BorderStyle>
+              <BorderColor />
+              <BorderWidth />
+            </Style>
+          </Textbox>
+          <Textbox Name="PROD_LOTNO">
+            <Top>420.0pt</Top>
+            <Left>106.9pt</Left>
+            <Width>170.29pt</Width>
+            <Height>30pt</Height>
+            <Value>=Fields!PROD_LOTNO.Value</Value>
+            <CanGrow>false</CanGrow>
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <FontSize>8pt</FontSize>
+              <TextAlign>Left</TextAlign>
+              <VerticalAlign>Middle</VerticalAlign>
+              <BorderStyle>
+                <Default>Solid</Default>
+                <Left>Solid</Left>
+                <Right>Solid</Right>
+                <Top>Solid</Top>
+                <Bottom>Solid</Bottom>
+              </BorderStyle>
+              <BorderColor />
+              <BorderWidth />
+            </Style>
+          </Textbox>
+          <Textbox Name="PROD_BATCHNO">
+            <Top>420.0pt</Top>
+            <Left>368.2pt</Left>
+            <Width>180pt</Width>
+            <Height>30pt</Height>
+            <Value>=Fields!PROD_BATCHNO.Value</Value>
+            <CanGrow>false</CanGrow>
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <FontSize>8pt</FontSize>
+              <TextAlign>Left</TextAlign>
+              <VerticalAlign>Middle</VerticalAlign>
+              <BorderStyle>
+                <Default>Solid</Default>
+                <Left>Solid</Left>
+                <Right>Solid</Right>
+                <Top>Solid</Top>
+                <Bottom>Solid</Bottom>
+              </BorderStyle>
+              <BorderColor />
+              <BorderWidth />
+            </Style>
+          </Textbox>
+          <Textbox Name="JOPRODREMARK0a">
+            <Top>450.0pt</Top>
+            <Left>106.9pt</Left>
+            <Width>25pt</Width>
+            <Height>20pt</Height>
+            <Value>=Fields!JOPRODREMARK0a.Value</Value>
+            <CanGrow>false</CanGrow>
+            <Style>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingLeft>2pt</PaddingLeft>
+              <TextAlign>Left</TextAlign>
+              <FontSize>8pt</FontSize>
+              <VerticalAlign>Middle</VerticalAlign>
+              <BorderStyle>
+                <Default>Solid</Default>
+                <Left>Solid</Left>
+                <Right>None</Right>
+                <Top>Solid</Top>
+                <Bottom>Solid</Bottom>
+              </BorderStyle>
+              <BorderColor />
+              <BorderWidth />
+            </Style>
+          </Textbox>
+          <Textbox Name="JOPRODREMARK0b">
+            <Top>450.0pt</Top>
+            <Left>238pt</Left>
+            <Width>45pt</Width>
+            <Height>20pt</Height>
+            <Value>=Fields!JOPRODREMARK0b.Value</Value>
+            <CanGrow>false</CanGrow>
+            <Style>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingLeft>2pt</PaddingLeft>
+              <TextAlign>Right</TextAlign>
+              <FontSize>8pt</FontSize>
+              <VerticalAlign>Middle</VerticalAlign>
+              <BorderStyle>
+                <Default>Solid</Default>
+                <Left>None</Left>
+                <Right>None</Right>
+                <Top>Solid</Top>
+                <Bottom>Solid</Bottom>
+              </BorderStyle>
+              <BorderColor />
+              <BorderWidth />
+            </Style>
+          </Textbox>
+          <Textbox Name="JOPRODREMARK0c">
+            <Top>450.0pt</Top>
+            <Left>297pt</Left>
+            <Width>45pt</Width>
+            <Height>20pt</Height>
+            <Value>=Fields!JOPRODREMARK0c.Value</Value>
+            <CanGrow>false</CanGrow>
+            <Style>
+              <PaddingRight>2pt</PaddingRight>
+              <TextAlign>Right</TextAlign>
+              <FontSize>8pt</FontSize>
+              <VerticalAlign>Middle</VerticalAlign>
+              <BorderStyle>
+                <Default>Solid</Default>
+                <Left>None</Left>
+                <Right>None</Right>
+                <Top>Solid</Top>
+                <Bottom>Solid</Bottom>
+              </BorderStyle>
+              <BorderColor />
+              <BorderWidth />
+            </Style>
+          </Textbox>
+          <Textbox Name="JOPRODREMARK0d">
+            <Top>450.0pt</Top>
+            <Left>370pt</Left>
+            <Width>45pt</Width>
+            <Height>20pt</Height>
+            <Value>=Fields!JOPRODREMARK0d.Value</Value>
+            <CanGrow>false</CanGrow>
+            <Style>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingLeft>2pt</PaddingLeft>
+              <TextAlign>Right</TextAlign>
+              <FontSize>8pt</FontSize>
+              <VerticalAlign>Middle</VerticalAlign>
+              <BorderStyle>
+                <Default>Solid</Default>
+                <Left>None</Left>
+                <Right>None</Right>
+                <Top>Solid</Top>
+                <Bottom>Solid</Bottom>
+              </BorderStyle>
+              <BorderColor />
+              <BorderWidth />
+            </Style>
+          </Textbox>
+          <Textbox Name="JOPRODJRLENGTH">
+            <Top>450.0pt</Top>
+            <Left>180.9pt</Left>
+            <Width>70pt</Width>
+            <Height>20pt</Height>
+            <Value>=Fields!JOPRODJRLENGTH.Value</Value>
+            <CanGrow>false</CanGrow>
+            <Style>
+              <PaddingRight>2pt</PaddingRight>
+              <TextAlign>Left</TextAlign>
+              <FontSize>8pt</FontSize>
+              <VerticalAlign>Middle</VerticalAlign>
+              <BorderStyle>
+                <Default>Solid</Default>
+                <Left>None</Left>
+                <Right>None</Right>
+                <Top>Solid</Top>
+                <Bottom>Solid</Bottom>
+              </BorderStyle>
+              <BorderColor />
+              <BorderWidth />
+            </Style>
+          </Textbox>
+          <Textbox Name="JOPRODJR1">
+            <Top>450.0pt</Top>
+            <Left>422pt</Left>
+            <Width>45pt</Width>
+            <Height>20pt</Height>
+            <Value>=Fields!JOPRODJR1.Value</Value>
+            <CanGrow>false</CanGrow>
+            <Style>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingLeft>2pt</PaddingLeft>
+              <TextAlign>Right</TextAlign>
+              <FontSize>8pt</FontSize>
+              <VerticalAlign>Middle</VerticalAlign>
+              <BorderStyle>
+                <Default>Solid</Default>
+                <Left>None</Left>
+                <Right>None</Right>
+                <Top>Solid</Top>
+                <Bottom>Solid</Bottom>
+              </BorderStyle>
+              <BorderColor />
+              <BorderWidth />
+            </Style>
+          </Textbox>
+          <Textbox Name="JOPRODJR2">
+            <Top>450.0pt</Top>
+            <Left>487pt</Left>
+            <Width>45pt</Width>
+            <Height>20pt</Height>
+            <Value>=Fields!JOPRODJR2.Value</Value>
+            <CanGrow>false</CanGrow>
+            <Style>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingLeft>2pt</PaddingLeft>
+              <TextAlign>Right</TextAlign>
+              <FontSize>8pt</FontSize>
+              <VerticalAlign>Middle</VerticalAlign>
+              <BorderStyle>
+                <Default>Solid</Default>
+                <Left>None</Left>
+                <Right>None</Right>
+                <Top>Solid</Top>
+                <Bottom>Solid</Bottom>
+              </BorderStyle>
+              <BorderColor />
+              <BorderWidth />
+            </Style>
+          </Textbox>
+          <Textbox Name="JOPRODREMARK1a">
+            <Top>470.0pt</Top>
+            <Left>106.9pt</Left>
+            <Width>30pt</Width>
+            <Height>20pt</Height>
+            <Value>=Fields!JOPRODREMARK1a.Value</Value>
+            <CanGrow>false</CanGrow>
+            <Style>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingLeft>2pt</PaddingLeft>
+              <TextAlign>Left</TextAlign>
+              <FontSize>8pt</FontSize>
+              <VerticalAlign>Middle</VerticalAlign>
+              <BorderStyle>
+                <Default>Solid</Default>
+                <Left>Solid</Left>
+                <Right>None</Right>
+                <Top>Solid</Top>
+                <Bottom>Solid</Bottom>
+              </BorderStyle>
+              <BorderColor />
+              <BorderWidth />
+            </Style>
+          </Textbox>
+          <Textbox Name="JOPRODREMARK1b">
+            <Top>470.0pt</Top>
+            <Left>275pt</Left>
+            <Width>50pt</Width>
+            <Height>20pt</Height>
+            <Value>=Fields!JOPRODREMARK1b.Value</Value>
+            <CanGrow>false</CanGrow>
+            <Style>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingLeft>2pt</PaddingLeft>
+              <TextAlign>Left</TextAlign>
+              <FontSize>8pt</FontSize>
+              <VerticalAlign>Middle</VerticalAlign>
+              <BorderStyle>
+                <Default>Solid</Default>
+                <Left>None</Left>
+                <Right>None</Right>
+                <Top>Solid</Top>
+                <Bottom>Solid</Bottom>
+              </BorderStyle>
+              <BorderColor />
+              <BorderWidth />
+            </Style>
+          </Textbox>
+          <Textbox Name="JOPRODREMARK1c">
+            <Top>470.0pt</Top>
+            <Left>315pt</Left>
+            <Width>70pt</Width>
+            <Height>20pt</Height>
+            <Value>=Fields!JOPRODREMARK1c.Value</Value>
+            <CanGrow>false</CanGrow>
+            <Style>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingLeft>2pt</PaddingLeft>
+              <TextAlign>Right</TextAlign>
+              <FontSize>8pt</FontSize>
+              <VerticalAlign>Middle</VerticalAlign>
+              <BorderStyle>
+                <Default>Solid</Default>
+                <Left>None</Left>
+                <Right>None</Right>
+                <Top>Solid</Top>
+                <Bottom>Solid</Bottom>
+              </BorderStyle>
+              <BorderColor />
+              <BorderWidth />
+            </Style>
+          </Textbox>
+          <Textbox Name="JOPRODREMARK1d">
+            <Top>470.0pt</Top>
+            <Left>405.0pt</Left>
+            <Width>98pt</Width>
+            <Height>20pt</Height>
+            <Value>=Fields!JOPRODREMARK1d.Value</Value>
+            <CanGrow>false</CanGrow>
+            <Style>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingLeft>2pt</PaddingLeft>
+              <TextAlign>Right</TextAlign>
+              <FontSize>8pt</FontSize>
+              <VerticalAlign>Middle</VerticalAlign>
+              <BorderStyle>
+                <Default>Solid</Default>
+                <Left>None</Left>
+                <Right>None</Right>
+                <Top>Solid</Top>
+                <Bottom>Solid</Bottom>
+              </BorderStyle>
+              <BorderColor />
+              <BorderWidth />
+            </Style>
+          </Textbox>
+          <Textbox Name="JOPRODPCORELENGTH">
+            <Top>470.0pt</Top>
+            <Left>160pt</Left>
+            <Width>70pt</Width>
+            <Height>20pt</Height>
+            <Value>=Fields!JOPRODPCORELENGTH.Value</Value>
+            <CanGrow>false</CanGrow>
+            <Style>
+              <PaddingRight>2pt</PaddingRight>
+              <TextAlign>Left</TextAlign>
+              <FontSize>8pt</FontSize>
+              <VerticalAlign>Middle</VerticalAlign>
+              <BorderStyle>
+                <Default>Solid</Default>
+                <Left>None</Left>
+                <Right>None</Right>
+                <Top>Solid</Top>
+                <Bottom>Solid</Bottom>
+              </BorderStyle>
+              <BorderColor />
+              <BorderWidth />
+            </Style>
+          </Textbox>
+          <Textbox Name="JOPRODREMARK3">
+            <Top>490.0pt</Top>
+            <Left>106.9pt</Left>
+            <Width>441.27pt</Width>
+            <Height>20pt</Height>
+            <Value>=Fields!JOPRODREMARK3.Value</Value>
+            <CanGrow>false</CanGrow>
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <FontSize>8pt</FontSize>
+              <TextAlign>Left</TextAlign>
+              <VerticalAlign>Middle</VerticalAlign>
+              <BorderStyle>
+                <Default>Solid</Default>
+                <Left>Solid</Left>
+                <Right>Solid</Right>
+                <Top>Solid</Top>
+                <Bottom>Solid</Bottom>
+              </BorderStyle>
+              <BorderColor />
+              <BorderWidth />
+            </Style>
+          </Textbox>
+          <Textbox Name="JOPRODREMARK4">
+            <Top>510.0pt</Top>
+            <Left>106.9pt</Left>
+            <Width>441.27pt</Width>
+            <Height>20pt</Height>
+            <Value>=Fields!JOPRODREMARK4.Value</Value>
+            <CanGrow>false</CanGrow>
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <FontSize>8pt</FontSize>
+              <TextAlign>Left</TextAlign>
+              <VerticalAlign>Middle</VerticalAlign>
+              <BorderStyle>
+                <Default>Solid</Default>
+                <Left>Solid</Left>
+                <Right>Solid</Right>
+                <Top>Solid</Top>
+                <Bottom>Solid</Bottom>
+              </BorderStyle>
+              <BorderColor />
+              <BorderWidth />
+            </Style>
+            <ZIndex>2</ZIndex>
+          </Textbox>
+          <Textbox Name="JOISSUEBY">
+            <Top>530.0pt</Top>
+            <Left>106.9pt</Left>
+            <Width>441.27pt</Width>
+            <Height>20pt</Height>
+            <Value>=Fields!JOISSUEBY.Value + " " + Format(Fields!JOUSERDATETIME.Value, "dd/MM/yyyy")</Value>
+            <CanGrow>false</CanGrow>
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <FontSize>8pt</FontSize>
+              <TextAlign>Left</TextAlign>
+              <VerticalAlign>Middle</VerticalAlign>
+              <BorderStyle>
+                <Default>Solid</Default>
+                <Left>Solid</Left>
+                <Right>Solid</Right>
+                <Top>Solid</Top>
+                <Bottom>Solid</Bottom>
+              </BorderStyle>
+              <BorderColor />
+              <BorderWidth />
+            </Style>
+            <ZIndex>2</ZIndex>
+          </Textbox>
+          <Textbox Name="PROD_LINE">
+            <Top>590.0pt</Top>
+            <Left>106.9pt</Left>
+            <Width>441.27pt</Width>
+            <Height>50pt</Height>
+            <Value>=Fields!PROD_LINE.Value</Value>
+            <CanGrow>false</CanGrow>
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <FontSize>16pt</FontSize>
+              <TextAlign>Left</TextAlign>
+              <VerticalAlign>Middle</VerticalAlign>
+              <BorderStyle>
+                <Default>Solid</Default>
+                <Left>Solid</Left>
+                <Right>Solid</Right>
+                <Top>Solid</Top>
+                <Bottom>Solid</Bottom>
+              </BorderStyle>
+              <BorderColor />
+              <BorderWidth />
+            </Style>
+            <ZIndex>2</ZIndex>
+          </Textbox>
+          <CustomReportItem Name="BarCodeItem1">
+            <Type>BarCode128</Type>
+            <Height>80pt</Height>
+            <Width>180pt</Width>
+            <CustomProperties>
+              <CustomProperty>
+                <Name>Code</Name>
+                <Value>=Fields!JODOCNO.Value</Value>
+              </CustomProperty>
+            </CustomProperties>
+            <Left>8.4pt</Left>
+            <Top>625.0pt</Top>
+            <Style>
+              <BorderStyle>
+              </BorderStyle>
+              <BorderColor />
+              <BorderWidth />
+            </Style>
+          </CustomReportItem>
+          <CustomReportItem Name="QRCodeItem1">
+            <Type>QR Code</Type>
+            <Height>25mm</Height>
+            <Width>25mm</Width>
+            <CustomProperties>
+              <CustomProperty>
+                <Name>QrCode</Name>
+                <Value>=Fields!JODOCNO.Value</Value>
+              </CustomProperty>
+            </CustomProperties>
+            <Left>450.0pt</Left>
+            <Top>635.2pt</Top>
+          </CustomReportItem>
+          <CustomReportItem Name="BarCodeItem2">
+            <Type>BarCode128</Type>
+            <Height>80pt</Height>
+            <Width>180pt</Width>
+            <CustomProperties>
+              <CustomProperty>
+                <Name>Code</Name>
+                <Value>=Fields!PROD_LINE.Value</Value>
+              </CustomProperty>
+            </CustomProperties>
+            <Left>198.0pt</Left>
+            <Top>557.8pt</Top>
+            <Style>
+              <BorderStyle>
+              </BorderStyle>
+              <BorderColor />
+              <BorderWidth />
+            </Style>
+            <ZIndex>3</ZIndex>
+          </CustomReportItem>
+          <CustomReportItem Name="QRCodeItem2">
+            <Type>QR Code</Type>
+            <Height>25mm</Height>
+            <Width>25mm</Width>
+            <CustomProperties>
+              <CustomProperty>
+                <Name>QrCode</Name>
+                <Value>=Fields!PROD_LINE.Value</Value>
+              </CustomProperty>
+            </CustomProperties>
+            <Left>450.0pt</Left>
+            <Top>575.8pt</Top>
+            <ZIndex>1</ZIndex>
+          </CustomReportItem>
+        </ReportItems>
+        <Width>100pt</Width>
+        <Style>
+          <BorderStyle />
+          <BorderColor />
+          <BorderWidth />
+        </Style>
+      </List>
+      <Textbox Name="date_of_issue">
+        <Height>20.00pt</Height>
+        <Width>100.00pt</Width>
+        <Value>Date of Issue</Value>
+        <ZIndex>1</ZIndex>
+        <Left>6.9pt</Left>
+        <Top>0.0pt</Top>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <TextAlign>Left</TextAlign>
+          <VerticalAlign>Middle</VerticalAlign>
+          <BorderStyle>
+            <Default>Solid</Default>
+            <Left>Solid</Left>
+            <Right>Solid</Right>
+            <Top>Solid</Top>
+            <Bottom>Solid</Bottom>
+          </BorderStyle>
+          <BorderColor />
+          <BorderWidth />
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox56">
+        <Height>40.00pt</Height>
+        <Width>100.00pt</Width>
+        <Value>Product Code</Value>
+        <ZIndex>1</ZIndex>
+        <Left>6.9pt</Left>
+        <Top>20.0pt</Top>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <TextAlign>Left</TextAlign>
+          <VerticalAlign>Middle</VerticalAlign>
+          <BorderStyle>
+            <Default>Solid</Default>
+            <Left>Solid</Left>
+            <Right>Solid</Right>
+            <Top>Solid</Top>
+            <Bottom>Solid</Bottom>
+          </BorderStyle>
+          <BorderColor />
+          <BorderWidth />
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox58">
+        <Height>20.00pt</Height>
+        <Width>100.00pt</Width>
+        <Value>Brand</Value>
+        <ZIndex>1</ZIndex>
+        <Left>6.9pt</Left>
+        <Top>80.0pt</Top>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <TextAlign>Left</TextAlign>
+          <VerticalAlign>Middle</VerticalAlign>
+          <BorderStyle>
+            <Default>Solid</Default>
+            <Left>Solid</Left>
+            <Right>Solid</Right>
+            <Top>Solid</Top>
+            <Bottom>Solid</Bottom>
+          </BorderStyle>
+          <BorderColor />
+          <BorderWidth />
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox59">
+        <Height>20.00pt</Height>
+        <Width>100.00pt</Width>
+        <Value>Product Size</Value>
+        <ZIndex>1</ZIndex>
+        <Left>6.9pt</Left>
+        <Top>100.00pt</Top>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <TextAlign>Left</TextAlign>
+          <VerticalAlign>Middle</VerticalAlign>
+          <BorderStyle>
+            <Default>Solid</Default>
+            <Left>Solid</Left>
+            <Right>Solid</Right>
+            <Top>Solid</Top>
+            <Bottom>Solid</Bottom>
+          </BorderStyle>
+          <BorderColor />
+          <BorderWidth />
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox60">
+        <Height>240.00pt</Height>
+        <Width>100.00pt</Width>
+        <Value>Packing Method</Value>
+        <ZIndex>1</ZIndex>
+        <Left>6.9pt</Left>
+        <Top>120.0pt</Top>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <TextAlign>Left</TextAlign>
+          <VerticalAlign>Middle</VerticalAlign>
+          <BorderStyle>
+            <Default>Solid</Default>
+            <Left>Solid</Left>
+            <Right>Solid</Right>
+            <Top>Solid</Top>
+            <Bottom>Solid</Bottom>
+          </BorderStyle>
+          <BorderColor />
+          <BorderWidth />
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox61">
+        <Height>20.00pt</Height>
+        <Width>100.00pt</Width>
+        <Value>Date of Production</Value>
+        <ZIndex>1</ZIndex>
+        <Left>6.9pt</Left>
+        <Top>360.0pt</Top>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <TextAlign>Left</TextAlign>
+          <VerticalAlign>Middle</VerticalAlign>
+          <BorderStyle>
+            <Default>Solid</Default>
+            <Left>Solid</Left>
+            <Right>Solid</Right>
+            <Top>Solid</Top>
+            <Bottom>Solid</Bottom>
+          </BorderStyle>
+          <BorderColor />
+          <BorderWidth />
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox57">
+        <Height>20.00pt</Height>
+        <Width>100.00pt</Width>
+        <Value>Color</Value>
+        <ZIndex>1</ZIndex>
+        <Left>6.9pt</Left>
+        <Top>60.0pt</Top>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <TextAlign>Left</TextAlign>
+          <VerticalAlign>Middle</VerticalAlign>
+          <BorderStyle>
+            <Default>Solid</Default>
+            <Left>Solid</Left>
+            <Right>Solid</Right>
+            <Top>Solid</Top>
+            <Bottom>Solid</Bottom>
+          </BorderStyle>
+          <BorderColor />
+          <BorderWidth />
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox62">
+        <Height>20.00pt</Height>
+        <Width>100.00pt</Width>
+        <Value>Operator</Value>
+        <ZIndex>1</ZIndex>
+        <Left>6.9pt</Left>
+        <Top>380.0pt</Top>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <TextAlign>Left</TextAlign>
+          <VerticalAlign>Middle</VerticalAlign>
+          <BorderStyle>
+            <Default>Solid</Default>
+            <Left>Solid</Left>
+            <Right>Solid</Right>
+            <Top>Solid</Top>
+            <Bottom>Solid</Bottom>
+          </BorderStyle>
+          <BorderColor />
+          <BorderWidth />
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox63">
+        <Height>20.00pt</Height>
+        <Width>100.00pt</Width>
+        <Value>Quantity Produced</Value>
+        <ZIndex>1</ZIndex>
+        <Left>6.9pt</Left>
+        <Top>400.0pt</Top>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <TextAlign>Left</TextAlign>
+          <VerticalAlign>Middle</VerticalAlign>
+          <BorderStyle>
+            <Default>Solid</Default>
+            <Left>Solid</Left>
+            <Right>Solid</Right>
+            <Top>Solid</Top>
+            <Bottom>Solid</Bottom>
+          </BorderStyle>
+          <BorderColor />
+          <BorderWidth />
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox64">
+        <Height>30pt</Height>
+        <Width>100pt</Width>
+        <Value>Jumbo Roll Lot Number</Value>
+        <ZIndex>1</ZIndex>
+        <Left>6.9pt</Left>
+        <Top>420.0pt</Top>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <TextAlign>Left</TextAlign>
+          <VerticalAlign>Middle</VerticalAlign>
+          <BorderStyle>
+            <Default>Solid</Default>
+            <Left>Solid</Left>
+            <Right>Solid</Right>
+            <Top>Solid</Top>
+            <Bottom>Solid</Bottom>
+          </BorderStyle>
+          <BorderColor />
+          <BorderWidth />
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox65">
+        <Height>80.00pt</Height>
+        <Width>100.00pt</Width>
+        <Value>Remarks</Value>
+        <ZIndex>1</ZIndex>
+        <Left>6.90pt</Left>
+        <Top>450.00pt</Top>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <TextAlign>Left</TextAlign>
+          <VerticalAlign>Middle</VerticalAlign>
+          <BorderStyle>
+            <Default>Solid</Default>
+            <Left>Solid</Left>
+            <Right>Solid</Right>
+            <Top>Solid</Top>
+            <Bottom>Solid</Bottom>
+          </BorderStyle>
+          <BorderColor />
+          <BorderWidth />
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox66">
+        <Height>20pt</Height>
+        <Width>91.12pt</Width>
+        <Value>Jo No</Value>
+        <ZIndex>1</ZIndex>
+        <Left>277.1pt</Left>
+        <Top>0.0pt</Top>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <TextAlign>Left</TextAlign>
+          <VerticalAlign>Middle</VerticalAlign>
+          <BorderStyle>
+            <Default>Solid</Default>
+            <Left>Solid</Left>
+            <Right>Solid</Right>
+            <Top>Solid</Top>
+            <Bottom>Solid</Bottom>
+          </BorderStyle>
+          <BorderColor />
+          <BorderWidth />
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox71">
+        <Height>20.00pt</Height>
+        <Width>100.00pt</Width>
+        <Value>Issued By</Value>
+        <ZIndex>1</ZIndex>
+        <Left>6.90pt</Left>
+        <Top>530.00pt</Top>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <TextAlign>Left</TextAlign>
+          <VerticalAlign>Middle</VerticalAlign>
+          <BorderStyle>
+            <Default>Solid</Default>
+            <Left>Solid</Left>
+            <Right>Solid</Right>
+            <Top>Solid</Top>
+            <Bottom>Solid</Bottom>
+          </BorderStyle>
+          <BorderColor />
+          <BorderWidth />
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox67">
+        <Height>40pt</Height>
+        <Width>91.12pt</Width>
+        <Value>Customer</Value>
+        <ZIndex>1</ZIndex>
+        <Left>277.1pt</Left>
+        <Top>20.0pt</Top>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <TextAlign>Left</TextAlign>
+          <VerticalAlign>Middle</VerticalAlign>
+          <BorderStyle>
+            <Default>Solid</Default>
+            <Left>Solid</Left>
+            <Right>Solid</Right>
+            <Top>Solid</Top>
+            <Bottom>Solid</Bottom>
+          </BorderStyle>
+          <BorderColor />
+          <BorderWidth />
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox68">
+        <Height>20pt</Height>
+        <Width>91.12pt</Width>
+        <Value>Quantity Order</Value>
+        <ZIndex>1</ZIndex>
+        <Left>277.1pt</Left>
+        <Top>60.0pt</Top>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <TextAlign>Left</TextAlign>
+          <VerticalAlign>Middle</VerticalAlign>
+          <BorderStyle>
+            <Default>Solid</Default>
+            <Left>Solid</Left>
+            <Right>Solid</Right>
+            <Top>Solid</Top>
+            <Bottom>Solid</Bottom>
+          </BorderStyle>
+          <BorderColor />
+          <BorderWidth />
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox69">
+        <Height>20pt</Height>
+        <Width>91.12pt</Width>
+        <Value>Weight (g)</Value>
+        <ZIndex>1</ZIndex>
+        <Left>277.1pt</Left>
+        <Top>80.0pt</Top>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <TextAlign>Left</TextAlign>
+          <VerticalAlign>Middle</VerticalAlign>
+          <BorderStyle>
+            <Default>Solid</Default>
+            <Left>Solid</Left>
+            <Right>Solid</Right>
+            <Top>Solid</Top>
+            <Bottom>Solid</Bottom>
+          </BorderStyle>
+          <BorderColor />
+          <BorderWidth />
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox70">
+        <Height>20pt</Height>
+        <Width>100pt</Width>
+        <Value>Machine Number</Value>
+        <ZIndex>1</ZIndex>
+        <Left>368.2pt</Left>
+        <Top>400pt</Top>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <TextAlign>Left</TextAlign>
+          <VerticalAlign>Middle</VerticalAlign>
+          <BorderStyle>
+            <Default>Solid</Default>
+            <Left>Solid</Left>
+            <Right>Solid</Right>
+            <Top>Solid</Top>
+            <Bottom>Solid</Bottom>
+          </BorderStyle>
+          <BorderColor />
+          <BorderWidth />
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox72">
+        <Height>20pt</Height>
+        <Width>91.12pt</Width>
+        <Value>Helper</Value>
+        <ZIndex>1</ZIndex>
+        <Left>277.1pt</Left>
+        <Top>380.0pt</Top>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <TextAlign>Left</TextAlign>
+          <VerticalAlign>Middle</VerticalAlign>
+          <BorderStyle>
+            <Default>Solid</Default>
+            <Left>Solid</Left>
+            <Right>Solid</Right>
+            <Top>Solid</Top>
+            <Bottom>Solid</Bottom>
+          </BorderStyle>
+          <BorderColor />
+          <BorderWidth />
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox73">
+        <Height>30pt</Height>
+        <Width>91.12pt</Width>
+        <Value>Batch Number</Value>
+        <ZIndex>1</ZIndex>
+        <Left>277.1pt</Left>
+        <Top>420.0pt</Top>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <TextAlign>Left</TextAlign>
+          <VerticalAlign>Middle</VerticalAlign>
+          <BorderStyle>
+            <Default>Solid</Default>
+            <Left>Solid</Left>
+            <Right>Solid</Right>
+            <Top>Solid</Top>
+            <Bottom>Solid</Bottom>
+          </BorderStyle>
+          <BorderColor />
+          <BorderWidth />
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox74" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition">
+        <Height>20pt</Height>
+        <Width>41pt</Width>
+        <Value>MM  X</Value>
+        <ZIndex>1</ZIndex>
+        <Left>147.0pt</Left>
+        <Top>100.0pt</Top>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <TextAlign>Left</TextAlign>
+          <VerticalAlign>Middle</VerticalAlign>
+          <BorderStyle>
+            <Default>None</Default>
+            <Left>None</Left>
+            <Right>None</Right>
+            <Top>Solid</Top>
+            <Bottom>Solid</Bottom>
+          </BorderStyle>
+          <BorderColor />
+          <BorderWidth />
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox75" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition">
+        <Height>20pt</Height>
+        <Width>49.14pt</Width>
+        <Value> M</Value>
+        <ZIndex>1</ZIndex>
+        <Left>228.0pt</Left>
+        <Top>100.0pt</Top>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <TextAlign>Left</TextAlign>
+          <VerticalAlign>Middle</VerticalAlign>
+          <BorderStyle>
+            <Default>None</Default>
+            <Left>None</Left>
+            <Right>None</Right>
+            <Top>Solid</Top>
+            <Bottom>Solid</Bottom>
+          </BorderStyle>
+          <BorderColor />
+          <BorderWidth />
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox76" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition">
+        <Height>20pt</Height>
+        <Width>70pt</Width>
+        <Value>MICRON</Value>
+        <ZIndex>1</ZIndex>
+        <Left>317.1pt</Left>
+        <Top>100.0pt</Top>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <TextAlign>Left</TextAlign>
+          <VerticalAlign>Middle</VerticalAlign>
+          <BorderStyle>
+            <Default>None</Default>
+            <Left>None</Left>
+            <Right>None</Right>
+            <Top>Solid</Top>
+            <Bottom>Solid</Bottom>
+          </BorderStyle>
+          <BorderColor />
+          <BorderWidth />
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox77" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition">
+        <Height>20pt</Height>
+        <Width>100.95pt</Width>
+        <Value>ROLL/CARTON</Value>
+        <ZIndex>1</ZIndex>
+        <Left>447.1pt</Left>
+        <Top>100.0pt</Top>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <TextAlign>Left</TextAlign>
+          <VerticalAlign>Middle</VerticalAlign>
+          <BorderStyle>
+            <Default>None</Default>
+            <Left>None</Left>
+            <Right>Solid</Right>
+            <Top>Solid</Top>
+            <Bottom>Solid</Bottom>
+          </BorderStyle>
+          <BorderColor />
+          <BorderWidth />
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox78" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition">
+        <Height>20pt</Height>
+        <Width>39.93pt</Width>
+        <Value>CTN</Value>
+        <ZIndex>1</ZIndex>
+        <Left>418.2pt</Left>
+        <Top>60.0pt</Top>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <TextAlign>Left</TextAlign>
+          <VerticalAlign>Middle</VerticalAlign>
+          <BorderStyle>
+            <Default>None</Default>
+            <Left>None</Left>
+            <Right>Solid</Right>
+            <Top>Solid</Top>
+            <Bottom>Solid</Bottom>
+          </BorderStyle>
+          <BorderColor />
+          <BorderWidth />
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox79" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition">
+        <Height>20pt</Height>
+        <Width>39.93pt</Width>
+        <Value>ROLL</Value>
+        <ZIndex>1</ZIndex>
+        <Left>508.2pt</Left>
+        <Top>60.0pt</Top>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <TextAlign>Left</TextAlign>
+          <VerticalAlign>Middle</VerticalAlign>
+          <BorderStyle>
+            <Default>None</Default>
+            <Left>None</Left>
+            <Right>Solid</Right>
+            <Top>Solid</Top>
+            <Bottom>Solid</Bottom>
+          </BorderStyle>
+          <BorderColor />
+          <BorderWidth />
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox2" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition">
+        <Height>20.00pt</Height>
+        <Width>30.00pt</Width>
+        <Value>CTN</Value>
+        <ZIndex>1</ZIndex>
+        <Left>155.7pt</Left>
+        <Top>400.0pt</Top>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <TextAlign>Left</TextAlign>
+          <VerticalAlign>Middle</VerticalAlign>
+          <BorderStyle>
+            <Default>None</Default>
+            <Left>None</Left>
+            <Right>None</Right>
+            <Top>Solid</Top>
+            <Bottom>Solid</Bottom>
+          </BorderStyle>
+          <BorderColor />
+          <BorderWidth />
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox3" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition">
+        <Height>20.00pt</Height>
+        <Width>35pt</Width>
+        <Value>ROLL</Value>
+        <ZIndex>1</ZIndex>
+        <Left>223.5pt</Left>
+        <Top>400.0pt</Top>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <TextAlign>Left</TextAlign>
+          <VerticalAlign>Middle</VerticalAlign>
+          <BorderStyle>
+            <Default>None</Default>
+            <Left>None</Left>
+            <Right>None</Right>
+            <Top>Solid</Top>
+            <Bottom>Solid</Bottom>
+          </BorderStyle>
+          <BorderColor />
+          <BorderWidth />
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox5" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition">
+        <Height>20pt</Height>
+        <Width>45.00pt</Width>
+        <Value>PCS/LR</Value>
+        <ZIndex>1</ZIndex>
+        <Left>132.1pt</Left>
+        <Top>450.0pt</Top>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <TextAlign>Left</TextAlign>
+          <VerticalAlign>Middle</VerticalAlign>
+          <BorderStyle>
+            <Default>None</Default>
+            <Left>None</Left>
+            <Right>None</Right>
+            <Top>Solid</Top>
+            <Bottom>Solid</Bottom>
+          </BorderStyle>
+          <BorderColor />
+          <BorderWidth />
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox6" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition">
+        <Height>20pt</Height>
+        <Width>40pt</Width>
+        <Value>PCS/</Value>
+        <ZIndex>1</ZIndex>
+        <Left>131.4pt</Left>
+        <Top>470.0pt</Top>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <TextAlign>Left</TextAlign>
+          <VerticalAlign>Middle</VerticalAlign>
+          <BorderStyle>
+            <Default>None</Default>
+            <Left>None</Left>
+            <Right>None</Right>
+            <Top>Solid</Top>
+            <Bottom>Solid</Bottom>
+          </BorderStyle>
+          <BorderColor />
+          <BorderWidth />
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox7" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition">
+        <Height>20pt</Height>
+        <Width>20.00pt</Width>
+        <Value>LR</Value>
+        <ZIndex>1</ZIndex>
+        <Left>281.1pt</Left>
+        <Top>450.0pt</Top>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <TextAlign>Left</TextAlign>
+          <VerticalAlign>Middle</VerticalAlign>
+          <BorderStyle>
+            <Default>None</Default>
+            <Left>None</Left>
+            <Right>None</Right>
+            <Top>Solid</Top>
+            <Bottom>Solid</Bottom>
+          </BorderStyle>
+          <BorderColor />
+          <BorderWidth />
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox8" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition">
+        <Height>20pt</Height>
+        <Width>35.00pt</Width>
+        <Value>ROLL</Value>
+        <ZIndex>1</ZIndex>
+        <Left>340.6pt</Left>
+        <Top>450.0pt</Top>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <TextAlign>Left</TextAlign>
+          <VerticalAlign>Middle</VerticalAlign>
+          <BorderStyle>
+            <Default>None</Default>
+            <Left>None</Left>
+            <Right>None</Right>
+            <Top>Solid</Top>
+            <Bottom>Solid</Bottom>
+          </BorderStyle>
+          <BorderColor />
+          <BorderWidth />
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox9" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition">
+        <Height>20.00pt</Height>
+        <Width>20.00pt</Width>
+        <Value>
+        </Value>
+        <ZIndex>1</ZIndex>
+        <Left>528.27pt</Left>
+        <Top>450.00pt</Top>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <TextAlign>Left</TextAlign>
+          <VerticalAlign>Middle</VerticalAlign>
+          <BorderStyle>
+            <Default>None</Default>
+            <Left>None</Left>
+            <Right>Solid</Right>
+            <Top>Solid</Top>
+            <Bottom>Solid</Bottom>
+          </BorderStyle>
+          <BorderColor />
+          <BorderWidth />
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox10" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition">
+        <Height>20pt</Height>
+        <Width>44.00pt</Width>
+        <Value>COLOR</Value>
+        <ZIndex>1</ZIndex>
+        <Left>504.27pt</Left>
+        <Top>470.0pt</Top>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <TextAlign>Left</TextAlign>
+          <VerticalAlign>Middle</VerticalAlign>
+          <BorderStyle>
+            <Default>None</Default>
+            <Left>None</Left>
+            <Right>Solid</Right>
+            <Top>Solid</Top>
+            <Bottom>Solid</Bottom>
+          </BorderStyle>
+          <BorderColor />
+          <BorderWidth />
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox12" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition">
+        <Height>20.00pt</Height>
+        <Width>60.00pt</Width>
+        <Value>P.CORES:</Value>
+        <ZIndex>1</ZIndex>
+        <Left>220.10pt</Left>
+        <Top>470.0pt</Top>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <TextAlign>Left</TextAlign>
+          <VerticalAlign>Middle</VerticalAlign>
+          <BorderStyle>
+            <Default>None</Default>
+            <Left>None</Left>
+            <Right>None</Right>
+            <Top>Solid</Top>
+            <Bottom>Solid</Bottom>
+          </BorderStyle>
+          <BorderColor />
+          <BorderWidth />
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox13" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition">
+        <Height>20pt</Height>
+        <Width>40.00pt</Width>
+        <Value>JR</Value>
+        <ZIndex>1</ZIndex>
+        <Left>463.9pt</Left>
+        <Top>450.0pt</Top>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <TextAlign>Left</TextAlign>
+          <VerticalAlign>Middle</VerticalAlign>
+          <BorderStyle>
+            <Default>None</Default>
+            <Left>None</Left>
+            <Right>None</Right>
+            <Top>Solid</Top>
+            <Bottom>Solid</Bottom>
+          </BorderStyle>
+          <BorderColor />
+          <BorderWidth />
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox14" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition">
+        <Height>20pt</Height>
+        <Width>20.00pt</Width>
+        <Value>M</Value>
+        <ZIndex>1</ZIndex>
+        <Left>412.3pt</Left>
+        <Top>450.0pt</Top>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <TextAlign>Left</TextAlign>
+          <VerticalAlign>Middle</VerticalAlign>
+          <BorderStyle>
+            <Default>None</Default>
+            <Left>None</Left>
+            <Right>None</Right>
+            <Top>Solid</Top>
+            <Bottom>Solid</Bottom>
+          </BorderStyle>
+          <BorderColor />
+          <BorderWidth />
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox1" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition">
+        <Height>20pt</Height>
+        <Width>30.00pt</Width>
+        <Value>THK</Value>
+        <ZIndex>1</ZIndex>
+        <Left>383.3pt</Left>
+        <Top>470.0pt</Top>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <TextAlign>Left</TextAlign>
+          <VerticalAlign>Middle</VerticalAlign>
+          <BorderStyle>
+            <Default>None</Default>
+            <Left>None</Left>
+            <Right>None</Right>
+            <Top>Solid</Top>
+            <Bottom>Solid</Bottom>
+          </BorderStyle>
+          <BorderColor />
+          <BorderWidth />
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox4" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition">
+        <Height>20pt</Height>
+        <Width>30pt</Width>
+        <Value>PCS</Value>
+        <ZIndex>1</ZIndex>
+        <Left>297.3pt</Left>
+        <Top>470.0pt</Top>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <TextAlign>Left</TextAlign>
+          <VerticalAlign>Middle</VerticalAlign>
+          <BorderStyle>
+            <Default>None</Default>
+            <Left>None</Left>
+            <Right>None</Right>
+            <Top>Solid</Top>
+            <Bottom>Solid</Bottom>
+          </BorderStyle>
+          <BorderColor />
+          <BorderWidth />
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox15">
+        <Height>20pt</Height>
+        <Width>91.12pt</Width>
+        <Value>Date of Delivery</Value>
+        <ZIndex>1</ZIndex>
+        <Left>277.1pt</Left>
+        <Top>360.0pt</Top>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <TextAlign>Left</TextAlign>
+          <VerticalAlign>Middle</VerticalAlign>
+        </Style>
+      </Textbox>
+      <Rectangle Name="Rectangle1" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition">
+        <Height>35.00pt</Height>
+        <Width>225.41pt</Width>
+        <Left>6.9pt</Left>
+        <Top>623.4pt</Top>
+        <ZIndex>1</ZIndex>
+        <Style>
+          <BackgroundColor>White</BackgroundColor>
+        </Style>
+      </Rectangle>
+      <Textbox Name="Textbox16" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition">
+        <Height>50.00pt</Height>
+        <Width>100.00pt</Width>
+        <Value>Packing Number</Value>
+        <ZIndex>2</ZIndex>
+        <Left>6.90pt</Left>
+        <Top>590.00pt</Top>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <TextAlign>Left</TextAlign>
+          <VerticalAlign>Middle</VerticalAlign>
+          <BorderStyle>
+            <Default>Solid</Default>
+            <Left>Solid</Left>
+            <Right>Solid</Right>
+            <Top>Solid</Top>
+            <Bottom>Solid</Bottom>
+          </BorderStyle>
+          <BorderColor />
+          <BorderWidth />
+        </Style>
+      </Textbox>
+      <Rectangle Name="Rectangle2" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition">
+        <Height>35.00pt</Height>
+        <Width>288.41pt</Width>
+        <Left>140.8pt</Left>
+        <Top>556.8pt</Top>
+        <ZIndex>3</ZIndex>
+        <Style>
+          <BackgroundColor>White</BackgroundColor>
+        </Style>
+      </Rectangle>
+      <Textbox Name="Textbox17" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition">
+        <Height>20pt</Height>
+        <Width>541.27pt</Width>
+        <Value>FOR STORE USAGE</Value>
+        <ZIndex>4</ZIndex>
+        <Left>6.9pt</Left>
+        <Top>550.0pt</Top>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <TextAlign>Left</TextAlign>
+          <VerticalAlign>Middle</VerticalAlign>
+          <BorderStyle>
+            <Default>Solid</Default>
+            <Left>Solid</Left>
+            <Right>Solid</Right>
+            <Top>Solid</Top>
+            <Bottom>Solid</Bottom>
+          </BorderStyle>
+          <BorderColor />
+          <BorderWidth>
+            <Top>2pt</Top>
+          </BorderWidth>
+          <FontWeight>Bold</FontWeight>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox18" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition">
+        <Height>20pt</Height>
+        <Width>541.27pt</Width>
+        <Value>Quantity Received                                   Received By                                                              Signed Date                                                 Slit+Pack </Value>
+        <ZIndex>4</ZIndex>
+        <Left>6.9pt</Left>
+        <Top>570.0pt</Top>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <TextAlign>Left</TextAlign>
+          <VerticalAlign>Middle</VerticalAlign>
+          <BorderStyle>
+            <Default>Solid</Default>
+            <Left>Solid</Left>
+            <Right>Solid</Right>
+            <Top>Solid</Top>
+            <Bottom>Solid</Bottom>
+          </BorderStyle>
+          <BorderColor />
+          <BorderWidth />
+          <FontWeight>Normal</FontWeight>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox19">
+        <Height>10.51pt</Height>
+        <Width>49.72pt</Width>
+        <Value>IT190118</Value>
+        <ZIndex>1</ZIndex>
+        <Left>302.0pt</Left>
+        <Top>684.7pt</Top>
+        <Style>
+          <BorderStyle />
+          <BorderColor />
+          <BorderWidth />
+        </Style>
+      </Textbox>
+    </ReportItems>
+  </Body>
+  <PageFooter>
+    <Height>14pt</Height>
+    <ReportItems>
+      <Textbox Name="Textbox53">
+        <Top>5.0pt</Top>
+        <Left>0.0pt</Left>
+        <Height>12pt</Height>
+        <Width>3in</Width>
+        <Value>=Globals!PageNumber + ' of ' + Globals!TotalPages</Value>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <FontWeight>Normal</FontWeight>
+        </Style>
+        <ZIndex>3</ZIndex>
+      </Textbox>
+    </ReportItems>
+    <PrintOnFirstPage>true</PrintOnFirstPage>
+    <PrintOnLastPage>true</PrintOnLastPage>
+  </PageFooter>
+  <DataSources>
+    <DataSource Name="DS1">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString>Server=AX-UAT; Password=sbax2020sbg; User ID=sbax2020; Initial Catalog=SBG_AX_2020; Integrated Security=false</ConnectString>
+        <IntegratedSecurity>false</IntegratedSecurity>
+      </ConnectionProperties>
+    </DataSource>
+  </DataSources>
+</Report>

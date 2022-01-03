@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <Description>
+  </Description>
+  <Author>
+  </Author>
+  <PageHeight>5.9in</PageHeight>
+  <PageWidth>4.3in</PageWidth>
+  <DataSources>
+    <DataSource Name="DS1">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString>Server=(local)\SQLEXPRESS; Password=ax2020sb; User ID=ax2020sb; Initial Catalog=SB_AX2020</ConnectString>
+      </ConnectionProperties>
+    </DataSource>
+  </DataSources>
+  <Width>4.3in</Width>
+  <TopMargin>.25in</TopMargin>
+  <LeftMargin>.25in</LeftMargin>
+  <RightMargin>.25in</RightMargin>
+  <BottomMargin>.25in</BottomMargin>
+  <DataSets>
+    <DataSet Name="Data">
+      <Query>
+        <DataSourceName>DS1</DataSourceName>
+        <CommandText>SELECT Stockcode, Stockmicron, Stockwidth, Stocklength, Stockcountry, StockPO  FROM TBL_GRN_COAT_FILM_LABEL</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="Stockcode">
+          <DataField>Stockcode</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Stockmicron">
+          <DataField>Stockmicron</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Stockwidth">
+          <DataField>Stockwidth</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Stocklength">
+          <DataField>Stocklength</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Stockcountry">
+          <DataField>Stockcountry</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="StockPO">
+          <DataField>StockPO</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+  </DataSets>
+  <PageHeader>
+    <Height>.5in</Height>
+    <PrintOnFirstPage>true</PrintOnFirstPage>
+    <PrintOnLastPage>true</PrintOnLastPage>
+  </PageHeader>
+  <Body>
+    <Height>4.1in</Height>
+    <ReportItems>
+      <List Name="List1">
+        <DataSetName>Data</DataSetName>
+        <Height>24pt</Height>
+        <NoRows>Query returned no rows!</NoRows>
+        <ReportItems>
+          <Textbox Name="Stockcode">
+            <Top>5.9pt</Top>
+            <Left>81.3pt</Left>
+            <Width>1.125in</Width>
+            <Height>.25in</Height>
+            <Value>=Fields!Stockcode.Value</Value>
+            <CanGrow>true</CanGrow>
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <BorderStyle />
+              <BorderColor />
+              <BorderWidth />
+              <FontSize>12pt</FontSize>
+            </Style>
+          </Textbox>
+          <Textbox Name="Stockmicron">
+            <Top>55.0pt</Top>
+            <Left>0.0pt</Left>
+            <Width>1.25in</Width>
+            <Height>.25in</Height>
+            <Value>=Fields!Stockmicron.Value</Value>
+            <CanGrow>false</CanGrow>
+            <Style>
+              <PaddingRight>2pt</PaddingRight>
+              <TextAlign>Left</TextAlign>
+              <BorderStyle />
+              <BorderColor />
+              <BorderWidth />
+              <FontSize>12pt</FontSize>
+            </Style>
+          </Textbox>
+          <Textbox Name="Stockwidth">
+            <Top>55.0pt</Top>
+            <Left>86.4pt</Left>
+            <Width>1.25in</Width>
+            <Height>.25in</Height>
+            <Value>=Fields!Stockwidth.Value</Value>
+            <CanGrow>false</CanGrow>
+            <Style>
+              <PaddingRight>2pt</PaddingRight>
+              <TextAlign>Left</TextAlign>
+              <FontSize>12pt</FontSize>
+            </Style>
+          </Textbox>
+          <Textbox Name="Stocklength">
+            <Top>55.0pt</Top>
+            <Left>184.7pt</Left>
+            <Width>1.25in</Width>
+            <Height>.25in</Height>
+            <Value>=Fields!Stocklength.Value</Value>
+            <CanGrow>false</CanGrow>
+            <Style>
+              <PaddingRight>2pt</PaddingRight>
+              <TextAlign>Left</TextAlign>
+              <FontSize>12pt</FontSize>
+            </Style>
+          </Textbox>
+          <Textbox Name="Stockcountry">
+            <Top>86.5pt</Top>
+            <Left>185.4pt</Left>
+            <Width>1.3in</Width>
+            <Height>.25in</Height>
+            <Value>=Fields!Stockcountry.Value</Value>
+            <CanGrow>false</CanGrow>
+            <Style>
+              <PaddingRight>2pt</PaddingRight>
+              <TextAlign>Left</TextAlign>
+              <FontSize>12pt</FontSize>
+            </Style>
+          </Textbox>
+          <Textbox Name="StockPO">
+            <Top>86.5pt</Top>
+            <Left>25pt</Left>
+            <Width>1.25in</Width>
+            <Height>.25in</Height>
+            <Value>=Fields!StockPO.Value</Value>
+            <CanGrow>false</CanGrow>
+            <Style>
+              <PaddingRight>2pt</PaddingRight>
+              <TextAlign>Left</TextAlign>
+              <FontSize>12pt</FontSize>
+            </Style>
+          </Textbox>
+          <CustomReportItem Name="QRCodeItem">
+            <Type>QR Code</Type>
+            <Height>35.91mm</Height>
+            <Width>35.91mm</Width>
+            <CustomProperties>
+              <CustomProperty>
+                <Name>QrCode</Name>
+                <Value>=Fields!StockPO</Value>
+              </CustomProperty>
+            </CustomProperties>
+            <Left>163.36pt</Left>
+            <Top>150pt</Top>
+          </CustomReportItem>
+          <CustomReportItem Name="BarCodeItem">
+            <Type>BarCode128</Type>
+            <Height>84.89pt</Height>
+            <Width>167.24pt</Width>
+            <CustomProperties>
+              <CustomProperty>
+                <Name>Code</Name>
+                <Value>=Fields!StockPO</Value>
+              </CustomProperty>
+            </CustomProperties>
+            <Left>0.25pt</Left>
+            <Top>160pt</Top>
+          </CustomReportItem>
+        </ReportItems>
+        <Width>4.3in</Width>
+        <Style>
+          <BorderStyle />
+          <BorderColor />
+          <BorderWidth />
+        </Style>
+      </List>
+      <Textbox Name="Textbox1">
+        <Height>12pt</Height>
+        <Width>1in</Width>
+        <Value>Stock Code</Value>
+        <ZIndex>1</ZIndex>
+        <Left>0.9pt</Left>
+        <Top>5.9pt</Top>
+        <Style>
+          <FontWeight>Bold</FontWeight>
+          <FontSize>12pt</FontSize>
+        </Style>
+      </Textbox>
+      <Textbox Name="lbl_mic">
+        <Height>12pt</Height>
+        <Width>1in</Width>
+        <Value>Micron</Value>
+        <ZIndex>1</ZIndex>
+        <Left>0.7pt</Left>
+        <Top>36.3pt</Top>
+        <Style>
+          <FontWeight>Bold</FontWeight>
+          <FontSize>12pt</FontSize>
+        </Style>
+      </Textbox>
+      <Textbox Name="lbl_width">
+        <Height>12pt</Height>
+        <Width>1in</Width>
+        <Value>Width (mm)</Value>
+        <ZIndex>1</ZIndex>
+        <Left>86.4pt</Left>
+        <Top>36.3pt</Top>
+        <Style>
+          <FontWeight>Bold</FontWeight>
+          <FontSize>12pt</FontSize>
+        </Style>
+      </Textbox>
+      <Textbox Name="lbl_length">
+        <Height>14.25pt</Height>
+        <Width>72.27pt</Width>
+        <Value>Length (m)</Value>
+        <ZIndex>1</ZIndex>
+        <Left>186.70pt</Left>
+        <Top>36.3pt</Top>
+        <Style>
+          <FontWeight>Bold</FontWeight>
+          <FontSize>12pt</FontSize>
+        </Style>
+      </Textbox>
+      <Textbox Name="lbl_po">
+        <Height>15.01pt</Height>
+        <Width>23.36pt</Width>
+        <Value>PO</Value>
+        <ZIndex>1</ZIndex>
+        <Left>0.8pt</Left>
+        <Top>86.5pt</Top>
+        <Style>
+          <FontWeight>Bold</FontWeight>
+          <FontSize>12pt</FontSize>
+        </Style>
+      </Textbox>
+      <Textbox Name="lbl_country">
+        <Height>17.26pt</Height>
+        <Width>72.27pt</Width>
+        <Value>Country</Value>
+        <ZIndex>1</ZIndex>
+        <Left>125.50pt</Left>
+        <Top>86.5pt</Top>
+        <Style>
+          <FontWeight>Bold</FontWeight>
+          <FontSize>12pt</FontSize>
+          <BorderStyle />
+          <BorderColor />
+          <BorderWidth />
+        </Style>
+      </Textbox>
+    </ReportItems>
+  </Body>
+  <PageFooter>
+    <Height>14pt</Height>
+    <ReportItems>
+      <Textbox Name="Textbox11">
+        <Top>1pt</Top>
+        <Left>10pt</Left>
+        <Height>12pt</Height>
+        <Width>3in</Width>
+        <Value>=Globals!PageNumber + ' of ' + Globals!TotalPages</Value>
+        <Style>
+          <FontSize>10pt</FontSize>
+          <FontWeight>Normal</FontWeight>
+        </Style>
+      </Textbox>
+    </ReportItems>
+    <PrintOnFirstPage>true</PrintOnFirstPage>
+    <PrintOnLastPage>true</PrintOnLastPage>
+  </PageFooter>
+</Report>

@@ -1,0 +1,1718 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{229876B3-06B9-4373-B4A8-BB833BFD456E}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>AX2020</RootNamespace>
+    <AssemblyName>AX2020</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <NoWin32Manifest>False</NoWin32Manifest>
+    <SignAssembly>False</SignAssembly>
+    <DelaySign>False</DelaySign>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <NoStdLib>False</NoStdLib>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <IntermediateOutputPath>obj\$(Configuration)\</IntermediateOutputPath>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>False</RunCodeAnalysis>
+    <SourceAnalysisOverrideSettingsFile>C:\Users\ax2020-1\AppData\Roaming\ICSharpCode\SharpDevelop4\Settings.SourceAnalysis</SourceAnalysisOverrideSettingsFile>
+    <ApplicationIcon>images\web_trello_icon_2_fOy_icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <BaseAddress>4194304</BaseAddress>
+    <RegisterForComInterop>False</RegisterForComInterop>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <FileAlignment>4096</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <BaseIntermediateOutputPath>obj\</BaseIntermediateOutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+    <BaseIntermediateOutputPath>obj\</BaseIntermediateOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Calendar.NET">
+      <HintPath>dll\Calendar.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="CommonControl">
+      <HintPath>dll\CommonControl.dll</HintPath>
+    </Reference>
+    <Reference Include="CommonFunction">
+      <HintPath>dll\CommonFunction.dll</HintPath>
+    </Reference>
+    <Reference Include="CommonLibrary">
+      <HintPath>dll\CommonLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="DataProviders">
+      <HintPath>dll\DataProviders.dll</HintPath>
+    </Reference>
+    <Reference Include="GenCode128">
+      <HintPath>dll\GenCode128.dll</HintPath>
+    </Reference>
+    <Reference Include="iTextSharp">
+      <HintPath>packages\iTextSharp-LGPL.4.1.6\lib\iTextSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="RdlCri">
+      <HintPath>dll\RdlCri.dll</HintPath>
+    </Reference>
+    <Reference Include="RdlEngine">
+      <HintPath>dll\RdlEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="RdlViewer">
+      <HintPath>dll\RdlViewer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.Calendar">
+      <HintPath>dll\System.Windows.Forms.Calendar.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="zxing">
+      <HintPath>dll\zxing.dll</HintPath>
+    </Reference>
+    <Reference Include="zxing.presentation">
+      <HintPath>dll\zxing.presentation.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frm_admin_factory.cs" />
+    <Compile Include="frm_admin_factory.Designer.cs">
+      <DependentUpon>frm_admin_factory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ax_item_master.cs" />
+    <Compile Include="frm_ax_item_master.Designer.cs">
+      <DependentUpon>frm_ax_item_master.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ax_stock_status_pm01.cs" />
+    <Compile Include="frm_ax_stock_status_pm01.Designer.cs">
+      <DependentUpon>frm_ax_stock_status_pm01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ax_stock_status_pm02.cs" />
+    <Compile Include="frm_ax_stock_status_pm02.Designer.cs">
+      <DependentUpon>frm_ax_stock_status_pm02.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ax_stock_status_pm03.cs" />
+    <Compile Include="frm_ax_stock_status_pm03.Designer.cs">
+      <DependentUpon>frm_ax_stock_status_pm03.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ax_stock_status_pm04.cs">
+      <DependentUpon>frm_ax_stock_status_pm03.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ax_stock_status_pm04.Designer.cs">
+      <DependentUpon>frm_ax_stock_status_pm04.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ax_stock_status_rm01.cs" />
+    <Compile Include="frm_ax_stock_status_rm01.Designer.cs">
+      <DependentUpon>frm_ax_stock_status_rm01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ax_stock_status_rm02.cs" />
+    <Compile Include="frm_ax_stock_status_rm02.Designer.cs">
+      <DependentUpon>frm_ax_stock_status_rm02.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ax_stock_status_sm01.cs" />
+    <Compile Include="frm_ax_stock_status_sm01.Designer.cs">
+      <DependentUpon>frm_ax_stock_status_sm01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ax_stock_status_sm02.cs" />
+    <Compile Include="frm_ax_stock_status_sm02.Designer.cs">
+      <DependentUpon>frm_ax_stock_status_sm02.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ax_stock_status_sm03.cs" />
+    <Compile Include="frm_ax_stock_status_sm03.Designer.cs">
+      <DependentUpon>frm_ax_stock_status_sm03.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ax_stock_status_sm04.cs" />
+    <Compile Include="frm_ax_stock_status_sm04.Designer.cs">
+      <DependentUpon>frm_ax_stock_status_sm04.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ax_stock_status_sm05.cs" />
+    <Compile Include="frm_ax_stock_status_sm05.Designer.cs">
+      <DependentUpon>frm_ax_stock_status_sm05.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ax_stock_status_sm06.cs" />
+    <Compile Include="frm_ax_stock_status_sm06.Designer.cs">
+      <DependentUpon>frm_ax_stock_status_sm06.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_conv_sales_backorder_due.cs" />
+    <Compile Include="frm_conv_sales_backorder_due.Designer.cs">
+      <DependentUpon>frm_conv_sales_backorder_due.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_conv_so_delivery_next_5days.cs" />
+    <Compile Include="frm_conv_so_delivery_next_5days.Designer.cs">
+      <DependentUpon>frm_conv_so_delivery_next_5days.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_get_CI_NO_rpt.cs" />
+    <Compile Include="frm_get_CI_NO_rpt.Designer.cs">
+      <DependentUpon>frm_get_CI_NO_rpt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_glue_transferdata_erp.cs" />
+    <Compile Include="frm_glue_transferdata_erp.Designer.cs">
+      <DependentUpon>frm_glue_transferdata_erp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_main_menu_coating_.cs">
+      <DependentUpon>frm_admin_factory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_main_menu_coating_.Designer.cs">
+      <DependentUpon>frm_main_menu_coating_.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_menu_ax_stock_status.cs" />
+    <Compile Include="frm_menu_ax_stock_status.Designer.cs">
+      <DependentUpon>frm_menu_ax_stock_status.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_menu_planning_coating.cs" />
+    <Compile Include="frm_menu_planning_coating.Designer.cs">
+      <DependentUpon>frm_menu_planning_coating.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_menu_sales.cs">
+      <DependentUpon>frm_menu_stretch_film.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_menu_sales.Designer.cs">
+      <DependentUpon>frm_menu_sales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_menu_stretch_film.cs" />
+    <Compile Include="frm_menu_stretch_film.Designer.cs">
+      <DependentUpon>frm_menu_stretch_film.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_menu_sub_schwaner.cs" />
+    <Compile Include="frm_menu_sub_schwaner.Designer.cs">
+      <DependentUpon>frm_menu_sub_schwaner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_messageBox.cs" />
+    <Compile Include="frm_messageBox.Designer.cs">
+      <DependentUpon>frm_messageBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_messageBox2.cs" />
+    <Compile Include="frm_messageBox2.Designer.cs">
+      <DependentUpon>frm_messageBox2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_process_dialog.cs" />
+    <Compile Include="frm_process_dialog.Designer.cs">
+      <DependentUpon>frm_process_dialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_prod_coating_double_side_print_R2.cs" />
+    <Compile Include="frm_prod_coating_double_side_print_R2.Designer.cs">
+      <DependentUpon>frm_prod_coating_double_side_print_R2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_prod_coating_transfer_received.cs" />
+    <Compile Include="frm_prod_coating_transfer_received.Designer.cs">
+      <DependentUpon>frm_prod_coating_transfer_received.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_prod_coating_double_side_r2.cs" />
+    <Compile Include="frm_prod_coating_double_side_r2.Designer.cs">
+      <DependentUpon>frm_prod_coating_double_side_r2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_prod_converting_output_cutting_r2.cs" />
+    <Compile Include="frm_prod_converting_output_cutting_r2.Designer.cs">
+      <DependentUpon>frm_prod_converting_output_cutting_r2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_prod_converting_output_packing_r2.cs" />
+    <Compile Include="frm_prod_converting_output_packing_r2.Designer.cs">
+      <DependentUpon>frm_prod_converting_output_packing_r2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_prod_converting_output_packing_r2test.cs" />
+    <Compile Include="frm_prod_converting_output_packing_r2test.Designer.cs">
+      <DependentUpon>frm_prod_converting_output_packing_r2test.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_prod_converting_output_packing_r3.cs" />
+    <Compile Include="frm_prod_converting_output_packing_r3.Designer.cs">
+      <DependentUpon>frm_prod_converting_output_packing_r3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_prod_converting_output_packing_r4.cs" />
+    <Compile Include="frm_prod_converting_output_packing_r4.Designer.cs">
+      <DependentUpon>frm_prod_converting_output_packing_r4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_prod_converting_output_packing_r5.cs" />
+    <Compile Include="frm_prod_converting_output_packing_r5.Designer.cs">
+      <DependentUpon>frm_prod_converting_output_packing_r5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_prod_converting_output_rewinding_open.cs" />
+    <Compile Include="frm_prod_converting_output_rewinding_open.Designer.cs">
+      <DependentUpon>frm_prod_converting_output_rewinding_open.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_prod_converting_output_rewinding_open_r1.cs" />
+    <Compile Include="frm_prod_converting_output_rewinding_open_r1.Designer.cs">
+      <DependentUpon>frm_prod_converting_output_rewinding_open_r1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_prod_converting_output_rewinding_r3.cs" />
+    <Compile Include="frm_prod_converting_output_rewinding_r3.Designer.cs">
+      <DependentUpon>frm_prod_converting_output_rewinding_r3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_prod_converting_output_rewinding_r4.cs" />
+    <Compile Include="frm_prod_converting_output_rewinding_r4.Designer.cs">
+      <DependentUpon>frm_prod_converting_output_rewinding_r4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_prod_converting_output_slitting_packing_r2.cs" />
+    <Compile Include="frm_prod_converting_output_slitting_packing_r2.Designer.cs">
+      <DependentUpon>frm_prod_converting_output_slitting_packing_r2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_prod_converting_output_slitting_permission.cs" />
+    <Compile Include="frm_prod_converting_output_slitting_permission.Designer.cs">
+      <DependentUpon>frm_prod_converting_output_slitting_permission.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_prod_converting_transfer_received.cs" />
+    <Compile Include="frm_prod_converting_transfer_received.Designer.cs">
+      <DependentUpon>frm_prod_converting_transfer_received.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_prod_conv_ax_wl_print_one.cs" />
+    <Compile Include="frm_prod_conv_ax_wl_print_one.Designer.cs">
+      <DependentUpon>frm_prod_conv_ax_wl_print_one.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_prod_conv_jr_balance.cs" />
+    <Compile Include="frm_prod_conv_jr_balance.Designer.cs">
+      <DependentUpon>frm_prod_conv_jr_balance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_prod_conv_menu_small_rewinding.cs" />
+    <Compile Include="frm_prod_conv_menu_small_rewinding.Designer.cs">
+      <DependentUpon>frm_prod_conv_menu_small_rewinding.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_prod_conv_output_rewinding_popup_yesno.cs" />
+    <Compile Include="frm_prod_conv_output_rewinding_popup_yesno.Designer.cs">
+      <DependentUpon>frm_prod_conv_output_rewinding_popup_yesno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_prod_conv_po_import.cs" />
+    <Compile Include="frm_prod_conv_po_import.Designer.cs">
+      <DependentUpon>frm_prod_conv_po_import.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_prod_conv_po_local.cs" />
+    <Compile Include="frm_prod_conv_po_local.Designer.cs">
+      <DependentUpon>frm_prod_conv_po_local.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_prod_conv_po_via_pr.cs" />
+    <Compile Include="frm_prod_conv_po_via_pr.Designer.cs">
+      <DependentUpon>frm_prod_conv_po_via_pr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_prod_coating_jo_change_film.cs" />
+    <Compile Include="frm_prod_coating_jo_change_film.Designer.cs">
+      <DependentUpon>frm_prod_coating_jo_change_film.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_prod_coating_jo_print.cs" />
+    <Compile Include="frm_prod_coating_jo_print.Designer.cs">
+      <DependentUpon>frm_prod_coating_jo_print.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_prod_coating_jo_R1.cs" />
+    <Compile Include="frm_prod_coating_jo_R1.Designer.cs">
+      <DependentUpon>frm_prod_coating_jo_R1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_prod_coating_jo_stockcode.cs" />
+    <Compile Include="frm_prod_coating_jo_stockcode.Designer.cs">
+      <DependentUpon>frm_prod_coating_jo_stockcode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_prod_coating_jo_wip.cs" />
+    <Compile Include="frm_prod_coating_jo_wip.Designer.cs">
+      <DependentUpon>frm_prod_coating_jo_wip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_prod_coating_printing_bom_R1.cs" />
+    <Compile Include="frm_prod_coating_printing_bom_R1.Designer.cs">
+      <DependentUpon>frm_prod_coating_printing_bom_R1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_prod_coat_schwaner_bill_of_material.cs" />
+    <Compile Include="frm_prod_coat_schwaner_bill_of_material.Designer.cs">
+      <DependentUpon>frm_prod_coat_schwaner_bill_of_material.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_prod_coat_schwaner_jo_memo_operator.cs" />
+    <Compile Include="frm_prod_coat_schwaner_jo_memo_operator.Designer.cs">
+      <DependentUpon>frm_prod_coat_schwaner_jo_memo_operator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_prod_coat_schwaner_jo_memo_rpt.cs" />
+    <Compile Include="frm_prod_coat_schwaner_jo_memo_rpt.Designer.cs">
+      <DependentUpon>frm_prod_coat_schwaner_jo_memo_rpt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_prod_converting_bill_papercore.cs" />
+    <Compile Include="frm_prod_converting_bill_papercore.Designer.cs">
+      <DependentUpon>frm_prod_converting_bill_papercore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_prod_converting_jo_r1.cs" />
+    <Compile Include="frm_prod_converting_jo_r1.Designer.cs">
+      <DependentUpon>frm_prod_converting_jo_r1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_prod_converting_jo_swit.cs" />
+    <Compile Include="frm_prod_converting_jo_swit.Designer.cs">
+      <DependentUpon>frm_prod_converting_jo_swit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_prod_converting_output_cutting_r1.cs" />
+    <Compile Include="frm_prod_converting_output_cutting_r1.Designer.cs">
+      <DependentUpon>frm_prod_converting_output_cutting_r1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_prod_converting_output_packing_print.cs" />
+    <Compile Include="frm_prod_converting_output_packing_print.Designer.cs">
+      <DependentUpon>frm_prod_converting_output_packing_print.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_prod_converting_output_rewinding_print.cs" />
+    <Compile Include="frm_prod_converting_output_rewinding_print.Designer.cs">
+      <DependentUpon>frm_prod_converting_output_rewinding_print.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_prod_converting_output_rewinding_r1.cs">
+      <DependentUpon>frm_prod_converting_output_rewinding_print.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_prod_converting_output_rewinding_r1.Designer.cs">
+      <DependentUpon>frm_prod_converting_output_rewinding_r1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_prod_converting_output_rewinding_r2.cs" />
+    <Compile Include="frm_prod_converting_output_rewinding_r2.Designer.cs">
+      <DependentUpon>frm_prod_converting_output_rewinding_r2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_prod_converting_output_rework.cs" />
+    <Compile Include="frm_prod_converting_output_rework.Designer.cs">
+      <DependentUpon>frm_prod_converting_output_rework.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_prod_converting_output_rework_popup.cs" />
+    <Compile Include="frm_prod_converting_output_rework_popup.Designer.cs">
+      <DependentUpon>frm_prod_converting_output_rework_popup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_prod_converting_output_scan.cs" />
+    <Compile Include="frm_prod_converting_output_scan.Designer.cs">
+      <DependentUpon>frm_prod_converting_output_scan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_prod_converting_output_shipmark_bal.cs">
+      <DependentUpon>frm_prod_converting_output_shipmark_bal_r1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_prod_converting_output_shipmark_bal.Designer.cs">
+      <DependentUpon>frm_prod_converting_output_shipmark_bal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_prod_converting_output_shipmark_bal_r1.cs" />
+    <Compile Include="frm_prod_converting_output_shipmark_bal_r1.Designer.cs">
+      <DependentUpon>frm_prod_converting_output_shipmark_bal_r1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_prod_converting_output_slitting_packing.cs" />
+    <Compile Include="frm_prod_converting_output_slitting_packing.Designer.cs">
+      <DependentUpon>frm_prod_converting_output_slitting_packing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_prod_converting_store_r2.cs" />
+    <Compile Include="frm_prod_converting_store_r2.Designer.cs">
+      <DependentUpon>frm_prod_converting_store_r2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_prod_coat_schwaner_jo_memo.cs" />
+    <Compile Include="frm_prod_coat_schwaner_jo_memo.Designer.cs">
+      <DependentUpon>frm_prod_coat_schwaner_jo_memo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_get_CI_NO.cs" />
+    <Compile Include="frm_get_CI_NO.Designer.cs">
+      <DependentUpon>frm_get_CI_NO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_prod_coverting_output_rewinding_check_ bal.cs" />
+    <Compile Include="frm_prod_coverting_output_rewinding_check_ bal.Designer.cs">
+      <DependentUpon>frm_prod_coverting_output_rewinding_check_ bal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_prod_menu_doubleside_r2.cs" />
+    <Compile Include="frm_prod_menu_doubleside_r2.Designer.cs">
+      <DependentUpon>frm_prod_menu_doubleside_r2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_prod_rewinding_converting.cs" />
+    <Compile Include="frm_prod_rewinding_converting.Designer.cs">
+      <DependentUpon>frm_prod_rewinding_converting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_prod_ribbon2_print2.cs" />
+    <Compile Include="frm_prod_ribbon2_print2.Designer.cs">
+      <DependentUpon>frm_prod_ribbon2_print2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_prod__coating_double_side_popup_r2.cs" />
+    <Compile Include="frm_prod__coating_double_side_popup_r2.Designer.cs">
+      <DependentUpon>frm_prod__coating_double_side_popup_r2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_prod_ribbon2.cs" />
+    <Compile Include="frm_prod_ribbon2.Designer.cs">
+      <DependentUpon>frm_prod_ribbon2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_prod_ribbon2_maintenance.cs" />
+    <Compile Include="frm_prod_ribbon2_maintenance.Designer.cs">
+      <DependentUpon>frm_prod_ribbon2_maintenance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_prod_ribbon2_menu.cs" />
+    <Compile Include="frm_prod_ribbon2_menu.Designer.cs">
+      <DependentUpon>frm_prod_ribbon2_menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_prod_ribbon2_output.cs" />
+    <Compile Include="frm_prod_ribbon2_output.Designer.cs">
+      <DependentUpon>frm_prod_ribbon2_output.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_prod_ribbon2_print.cs" />
+    <Compile Include="frm_prod_ribbon2_print.Designer.cs">
+      <DependentUpon>frm_prod_ribbon2_print.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_prod_warehouse_ax_print.cs" />
+    <Compile Include="frm_prod_warehouse_ax_print.Designer.cs">
+      <DependentUpon>frm_prod_warehouse_ax_print.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_prod_warehouse_ax_wj303_print_all.cs" />
+    <Compile Include="frm_prod_warehouse_ax_wj303_print_all.Designer.cs">
+      <DependentUpon>frm_prod_warehouse_ax_wj303_print_all.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_prod_warehouse_ax_wj303_print_one.cs" />
+    <Compile Include="frm_prod_warehouse_ax_wj303_print_one.Designer.cs">
+      <DependentUpon>frm_prod_warehouse_ax_wj303_print_one.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_prod_warehouse_fr_receive_ax.cs" />
+    <Compile Include="frm_prod_warehouse_fr_receive_ax.Designer.cs">
+      <DependentUpon>frm_prod_warehouse_fr_receive_ax.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_prod_warehouse_stocktransfer.cs" />
+    <Compile Include="frm_prod_warehouse_stocktransfer.Designer.cs">
+      <DependentUpon>frm_prod_warehouse_stocktransfer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_prod_warehouse_stocktransfer_vm.cs" />
+    <Compile Include="frm_prod_warehouse_stocktransfer_vm.Designer.cs">
+      <DependentUpon>frm_prod_warehouse_stocktransfer_vm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_prod_warehouse_transfer_bopp.cs" />
+    <Compile Include="frm_prod_warehouse_transfer_bopp.Designer.cs">
+      <DependentUpon>frm_prod_warehouse_transfer_bopp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_prod_warehouse_transfer_jr.cs" />
+    <Compile Include="frm_prod_warehouse_transfer_jr.Designer.cs">
+      <DependentUpon>frm_prod_warehouse_transfer_jr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_prod_warehouse_transfer_mov.cs" />
+    <Compile Include="frm_prod_warehouse_transfer_mov.Designer.cs">
+      <DependentUpon>frm_prod_warehouse_transfer_mov.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_prod_warehouse_transfer_receive.cs" />
+    <Compile Include="frm_prod_warehouse_transfer_receive.Designer.cs">
+      <DependentUpon>frm_prod_warehouse_transfer_receive.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_prod_warehouse_transfer_received.cs" />
+    <Compile Include="frm_prod_warehouse_transfer_received.Designer.cs">
+      <DependentUpon>frm_prod_warehouse_transfer_received.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_prod_warehouse_transfer_received_fr.cs" />
+    <Compile Include="frm_prod_warehouse_transfer_received_fr.Designer.cs">
+      <DependentUpon>frm_prod_warehouse_transfer_received_fr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_rpt_coating_capacity.cs" />
+    <Compile Include="frm_rpt_coating_capacity.Designer.cs">
+      <DependentUpon>frm_rpt_coating_capacity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_rpt_coating_output_overweight.cs" />
+    <Compile Include="frm_rpt_coating_output_overweight.Designer.cs">
+      <DependentUpon>frm_rpt_coating_output_overweight.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_rpt_coating_output_underweight.cs" />
+    <Compile Include="frm_rpt_coating_output_underweight.Designer.cs">
+      <DependentUpon>frm_rpt_coating_output_underweight.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_rpt_procurement.cs" />
+    <Compile Include="frm_rpt_procurement.Designer.cs">
+      <DependentUpon>frm_rpt_procurement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_prod_warehouse_sample.cs" />
+    <Compile Include="frm_prod_warehouse_sample.Designer.cs">
+      <DependentUpon>frm_prod_warehouse_sample.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_prod_warehouse_sample_popup.cs" />
+    <Compile Include="frm_prod_warehouse_sample_popup.Designer.cs">
+      <DependentUpon>frm_prod_warehouse_sample_popup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_rpt_coating_Cgrade.cs" />
+    <Compile Include="frm_rpt_coating_Cgrade.Designer.cs">
+      <DependentUpon>frm_rpt_coating_Cgrade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_rpt_converting_jo.cs" />
+    <Compile Include="frm_rpt_converting_jo.Designer.cs">
+      <DependentUpon>frm_rpt_converting_jo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_rpt_converting_jo_rewinding_label.cs" />
+    <Compile Include="frm_rpt_converting_jo_rewinding_label.Designer.cs">
+      <DependentUpon>frm_rpt_converting_jo_rewinding_label.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_rpt_converting_jr.cs" />
+    <Compile Include="frm_rpt_converting_jr.Designer.cs">
+      <DependentUpon>frm_rpt_converting_jr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_rpt_converting_jr_balance.cs" />
+    <Compile Include="frm_rpt_converting_jr_balance.Designer.cs">
+      <DependentUpon>frm_rpt_converting_jr_balance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_prod_kliner.cs" />
+    <Compile Include="frm_prod_kliner.Designer.cs">
+      <DependentUpon>frm_prod_kliner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_prod_kliner_popup.cs" />
+    <Compile Include="frm_prod_kliner_popup.Designer.cs">
+      <DependentUpon>frm_prod_kliner_popup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_prod_warehouse_jr_receive_barcode.cs" />
+    <Compile Include="frm_prod_warehouse_jr_receive_barcode.Designer.cs">
+      <DependentUpon>frm_prod_warehouse_jr_receive_barcode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_menu_admin.cs" />
+    <Compile Include="frm_menu_admin.Designer.cs">
+      <DependentUpon>frm_menu_admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_menu_management.cs" />
+    <Compile Include="frm_menu_management.Designer.cs">
+      <DependentUpon>frm_menu_management.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_menu_packing_list.cs" />
+    <Compile Include="frm_menu_packing_list.Designer.cs">
+      <DependentUpon>frm_menu_packing_list.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_menu_qac.cs" />
+    <Compile Include="frm_menu_qac.Designer.cs">
+      <DependentUpon>frm_menu_qac.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_prod_warehouse_kliner_received.cs" />
+    <Compile Include="frm_prod_warehouse_kliner_received.Designer.cs">
+      <DependentUpon>frm_prod_warehouse_kliner_received.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_prod_warehouse_stretch_film_received.cs" />
+    <Compile Include="frm_prod_warehouse_stretch_film_received.Designer.cs">
+      <DependentUpon>frm_prod_warehouse_stretch_film_received.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_rpt_converting_cutting.cs" />
+    <Compile Include="frm_rpt_converting_cutting.Designer.cs">
+      <DependentUpon>frm_rpt_converting_cutting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_rpt_converting_cutting_detail.cs" />
+    <Compile Include="frm_rpt_converting_cutting_detail.Designer.cs">
+      <DependentUpon>frm_rpt_converting_cutting_detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_rpt_converting_cutting_fast.cs" />
+    <Compile Include="frm_rpt_converting_cutting_fast.Designer.cs">
+      <DependentUpon>frm_rpt_converting_cutting_fast.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_rpt_converting_cutting_shift_fast.cs" />
+    <Compile Include="frm_rpt_converting_cutting_shift_fast.Designer.cs">
+      <DependentUpon>frm_rpt_converting_cutting_shift_fast.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_rpt_converting_jr_balance_jrstockcode.cs" />
+    <Compile Include="frm_rpt_converting_jr_balance_jrstockcode.Designer.cs">
+      <DependentUpon>frm_rpt_converting_jr_balance_jrstockcode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_rpt_converting_jr_balance_lr.cs" />
+    <Compile Include="frm_rpt_converting_jr_balance_lr.Designer.cs">
+      <DependentUpon>frm_rpt_converting_jr_balance_lr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_rpt_converting_jr_balance_r2.cs" />
+    <Compile Include="frm_rpt_converting_jr_balance_r2.Designer.cs">
+      <DependentUpon>frm_rpt_converting_jr_balance_r2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_rpt_converting_jr_balance_r1.cs" />
+    <Compile Include="frm_rpt_converting_jr_balance_r1.Designer.cs">
+      <DependentUpon>frm_rpt_converting_jr_balance_r1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_rpt_converting_packing_fr.cs" />
+    <Compile Include="frm_rpt_converting_packing_fr.Designer.cs">
+      <DependentUpon>frm_rpt_converting_packing_fr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_rpt_converting_packing_list_fr.cs" />
+    <Compile Include="frm_rpt_converting_packing_list_fr.Designer.cs">
+      <DependentUpon>frm_rpt_converting_packing_list_fr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_rpt_converting_packing_list_jr.cs" />
+    <Compile Include="frm_rpt_converting_packing_list_jr.Designer.cs">
+      <DependentUpon>frm_rpt_converting_packing_list_jr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_rpt_converting_prod_detail_2.cs" />
+    <Compile Include="frm_rpt_converting_prod_detail_2.Designer.cs">
+      <DependentUpon>frm_rpt_converting_prod_detail_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_rpt_converting_prod_detail_3.cs" />
+    <Compile Include="frm_rpt_converting_prod_detail_3.Designer.cs">
+      <DependentUpon>frm_rpt_converting_prod_detail_3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_rpt_converting_progress.cs" />
+    <Compile Include="frm_rpt_converting_progress.Designer.cs">
+      <DependentUpon>frm_rpt_converting_progress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_rpt_converting_progress_r1.cs" />
+    <Compile Include="frm_rpt_converting_progress_r1.Designer.cs">
+      <DependentUpon>frm_rpt_converting_progress_r1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_rpt_converting_progress_r3.cs" />
+    <Compile Include="frm_rpt_converting_progress_r3.Designer.cs">
+      <DependentUpon>frm_rpt_converting_progress_r3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_rpt_converting_rewind.cs" />
+    <Compile Include="frm_rpt_converting_rewind.Designer.cs">
+      <DependentUpon>frm_rpt_converting_rewind.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_rpt_converting_rewind_detail.cs" />
+    <Compile Include="frm_rpt_converting_rewind_detail.Designer.cs">
+      <DependentUpon>frm_rpt_converting_rewind_detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_rpt_converting_rewind_shift_fast.cs" />
+    <Compile Include="frm_rpt_converting_rewind_shift_fast.Designer.cs">
+      <DependentUpon>frm_rpt_converting_rewind_shift_fast.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_rpt_converting_tracking.cs" />
+    <Compile Include="frm_rpt_converting_tracking.Designer.cs">
+      <DependentUpon>frm_rpt_converting_tracking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_rpt_converting_tracking_r1.cs" />
+    <Compile Include="frm_rpt_converting_tracking_r1.Designer.cs">
+      <DependentUpon>frm_rpt_converting_tracking_r1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_rpt_conv_backorder.cs" />
+    <Compile Include="frm_rpt_conv_backorder.Designer.cs">
+      <DependentUpon>frm_rpt_conv_backorder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_rpt_glue_consume.cs" />
+    <Compile Include="frm_rpt_glue_consume.Designer.cs">
+      <DependentUpon>frm_rpt_glue_consume.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_rpt_glue_consume_stockcode.cs" />
+    <Compile Include="frm_rpt_glue_consume_stockcode.Designer.cs">
+      <DependentUpon>frm_rpt_glue_consume_stockcode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_rpt_glue_output.cs" />
+    <Compile Include="frm_rpt_glue_output.Designer.cs">
+      <DependentUpon>frm_rpt_glue_output.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_rpt_kliner_consume.cs" />
+    <Compile Include="frm_rpt_kliner_consume.Designer.cs">
+      <DependentUpon>frm_rpt_kliner_consume.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_rpt_kliner_output.cs" />
+    <Compile Include="frm_rpt_kliner_output.Designer.cs">
+      <DependentUpon>frm_rpt_kliner_output.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_rpt_papercore_consume.cs" />
+    <Compile Include="frm_rpt_papercore_consume.Designer.cs">
+      <DependentUpon>frm_rpt_papercore_consume.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_rpt_papercore_output.cs" />
+    <Compile Include="frm_rpt_papercore_output.Designer.cs">
+      <DependentUpon>frm_rpt_papercore_output.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_rpt_coating_Bgrade.cs" />
+    <Compile Include="frm_rpt_coating_Bgrade.Designer.cs">
+      <DependentUpon>frm_rpt_coating_Bgrade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_rpt_coating_check_jrshipmark.cs" />
+    <Compile Include="frm_rpt_coating_check_jrshipmark.Designer.cs">
+      <DependentUpon>frm_rpt_coating_check_jrshipmark.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_rpt_coating_check_saleorder.cs" />
+    <Compile Include="frm_rpt_coating_check_saleorder.Designer.cs">
+      <DependentUpon>frm_rpt_coating_check_saleorder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_rpt_coating_local.cs" />
+    <Compile Include="frm_rpt_coating_local.Designer.cs">
+      <DependentUpon>frm_rpt_coating_local.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_rpt_coating_output.cs" />
+    <Compile Include="frm_rpt_coating_output.Designer.cs">
+      <DependentUpon>frm_rpt_coating_output.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_rpt_coating_output_detail_jo.cs" />
+    <Compile Include="frm_rpt_coating_output_detail_jo.Designer.cs">
+      <DependentUpon>frm_rpt_coating_output_detail_jo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_rpt_coating_wastage.cs" />
+    <Compile Include="frm_rpt_coating_wastage.Designer.cs">
+      <DependentUpon>frm_rpt_coating_wastage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_prod_coating_store.cs" />
+    <Compile Include="frm_prod_coating_store.Designer.cs">
+      <DependentUpon>frm_prod_coating_store.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_prod_converting_grn_film.cs" />
+    <Compile Include="frm_prod_converting_grn_film.Designer.cs">
+      <DependentUpon>frm_prod_converting_grn_film.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_menu_coating.cs" />
+    <Compile Include="frm_menu_coating.Designer.cs">
+      <DependentUpon>frm_menu_coating.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_menu_converting.cs" />
+    <Compile Include="frm_menu_converting.Designer.cs">
+      <DependentUpon>frm_menu_converting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_menu_planning_converting.cs" />
+    <Compile Include="frm_menu_planning_converting.Designer.cs">
+      <DependentUpon>frm_menu_planning_converting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_menu_glue.cs" />
+    <Compile Include="frm_menu_glue.Designer.cs">
+      <DependentUpon>frm_menu_glue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_menu_kliner.cs" />
+    <Compile Include="frm_menu_kliner.Designer.cs">
+      <DependentUpon>frm_menu_kliner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_menu_main.cs" />
+    <Compile Include="frm_menu_main.Designer.cs">
+      <DependentUpon>frm_menu_main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_menu_papercore.cs">
+      <DependentUpon>frm_menu_planning.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_menu_papercore.Designer.cs">
+      <DependentUpon>frm_menu_papercore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_menu_planning.cs" />
+    <Compile Include="frm_menu_planning.Designer.cs">
+      <DependentUpon>frm_menu_planning.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_menu_ribbon.cs" />
+    <Compile Include="frm_menu_ribbon.Designer.cs">
+      <DependentUpon>frm_menu_ribbon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_menu_system.cs" />
+    <Compile Include="frm_menu_system.Designer.cs">
+      <DependentUpon>frm_menu_system.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_menu_system_user_access.cs" />
+    <Compile Include="frm_menu_system_user_access.Designer.cs">
+      <DependentUpon>frm_menu_system_user_access.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_admin.cs" />
+    <Compile Include="frm_admin.Designer.cs">
+      <DependentUpon>frm_admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_menu_warehouse.cs" />
+    <Compile Include="frm_menu_warehouse.Designer.cs">
+      <DependentUpon>frm_menu_warehouse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_prod_coating_net_weight.cs" />
+    <Compile Include="frm_prod_coating_net_weight.Designer.cs">
+      <DependentUpon>frm_prod_coating_net_weight.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_prod_coating_net_wet_calculation.cs" />
+    <Compile Include="frm_prod_coating_net_wet_calculation.Designer.cs">
+      <DependentUpon>frm_prod_coating_net_wet_calculation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_prod_coating_double_side.cs" />
+    <Compile Include="frm_prod_coating_double_side.Designer.cs">
+      <DependentUpon>frm_prod_coating_double_side.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_prod_coating_jo_printing.cs" />
+    <Compile Include="frm_prod_coating_jo_printing.Designer.cs">
+      <DependentUpon>frm_prod_coating_jo_printing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_prod_coating_jo.cs" />
+    <Compile Include="frm_prod_coating_jo.Designer.cs">
+      <DependentUpon>frm_prod_coating_jo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_prod_coating_schwaner.cs">
+      <DependentUpon>frm_prod_coating_printing_bom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_prod_coating_schwaner.Designer.cs">
+      <DependentUpon>frm_prod_coating_schwaner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_prod_converting_bill.cs" />
+    <Compile Include="frm_prod_converting_bill.Designer.cs">
+      <DependentUpon>frm_prod_converting_bill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_prod_converting_jo.cs" />
+    <Compile Include="frm_prod_converting_jo.Designer.cs">
+      <DependentUpon>frm_prod_converting_jo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_prod_converting_jo_print.cs" />
+    <Compile Include="frm_prod_converting_jo_print.Designer.cs">
+      <DependentUpon>frm_prod_converting_jo_print.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_prod_converting_store.cs" />
+    <Compile Include="frm_prod_converting_store.Designer.cs">
+      <DependentUpon>frm_prod_converting_store.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_prod_converting_output_cutting.cs" />
+    <Compile Include="frm_prod_converting_output_cutting.Designer.cs">
+      <DependentUpon>frm_prod_converting_output_cutting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_prod_converting_output_packing.cs" />
+    <Compile Include="frm_prod_converting_output_packing.Designer.cs">
+      <DependentUpon>frm_prod_converting_output_packing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_prod_converting_output_papercore.cs" />
+    <Compile Include="frm_prod_converting_output_papercore.Designer.cs">
+      <DependentUpon>frm_prod_converting_output_papercore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_prod_converting_output_rewinding.cs" />
+    <Compile Include="frm_prod_converting_output_rewinding.Designer.cs">
+      <DependentUpon>frm_prod_converting_output_rewinding.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_prod_converting_output_slitting.cs" />
+    <Compile Include="frm_prod_converting_output_slitting.Designer.cs">
+      <DependentUpon>frm_prod_converting_output_slitting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_prod_converting_jo_progress.cs" />
+    <Compile Include="frm_prod_converting_jo_progress.Designer.cs">
+      <DependentUpon>frm_prod_converting_jo_progress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_prod_converting_jo_tracking.cs" />
+    <Compile Include="frm_prod_converting_jo_tracking.Designer.cs">
+      <DependentUpon>frm_prod_converting_jo_tracking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_prod_glue.cs" />
+    <Compile Include="frm_prod_glue.Designer.cs">
+      <DependentUpon>frm_prod_glue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_prod_glue_popup.cs" />
+    <Compile Include="frm_prod_glue_popup.Designer.cs">
+      <DependentUpon>frm_prod_glue_popup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_prod_papercore.cs" />
+    <Compile Include="frm_prod_papercore.Designer.cs">
+      <DependentUpon>frm_prod_papercore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_prod_papercore_popup.cs" />
+    <Compile Include="frm_prod_papercore_popup.Designer.cs">
+      <DependentUpon>frm_prod_papercore_popup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_prod_ribbon.cs" />
+    <Compile Include="frm_prod_ribbon.Designer.cs">
+      <DependentUpon>frm_prod_ribbon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_prod_ribbon_popup.cs" />
+    <Compile Include="frm_prod_ribbon_popup.Designer.cs">
+      <DependentUpon>frm_prod_ribbon_popup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_prod_shipping.cs" />
+    <Compile Include="frm_prod_shipping.Designer.cs">
+      <DependentUpon>frm_prod_shipping.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_prod_stretch_film.cs" />
+    <Compile Include="frm_prod_stretch_film.Designer.cs">
+      <DependentUpon>frm_prod_stretch_film.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_prod_stretch_film_popup.cs" />
+    <Compile Include="frm_prod_stretch_film_popup.Designer.cs">
+      <DependentUpon>frm_prod_stretch_film_popup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_rpt_converting_pack.cs" />
+    <Compile Include="frm_rpt_converting_pack.Designer.cs">
+      <DependentUpon>frm_rpt_converting_pack.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_rpt_converting_pack_detail.cs" />
+    <Compile Include="frm_rpt_converting_pack_detail.Designer.cs">
+      <DependentUpon>frm_rpt_converting_pack_detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_rpt_converting_pack_fast.cs" />
+    <Compile Include="frm_rpt_converting_pack_fast.Designer.cs">
+      <DependentUpon>frm_rpt_converting_pack_fast.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_rpt_converting_pack_shift_fast.cs" />
+    <Compile Include="frm_rpt_converting_pack_shift_fast.Designer.cs">
+      <DependentUpon>frm_rpt_converting_pack_shift_fast.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_rpt_converting_prod.cs" />
+    <Compile Include="frm_rpt_converting_prod.Designer.cs">
+      <DependentUpon>frm_rpt_converting_prod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_rpt_converting_prod_detail.cs" />
+    <Compile Include="frm_rpt_converting_prod_detail.Designer.cs">
+      <DependentUpon>frm_rpt_converting_prod_detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_rpt_converting_prod_fast.cs" />
+    <Compile Include="frm_rpt_converting_prod_fast.Designer.cs">
+      <DependentUpon>frm_rpt_converting_prod_fast.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_rpt_converting_prod_shift_fast.cs" />
+    <Compile Include="frm_rpt_converting_prod_shift_fast.Designer.cs">
+      <DependentUpon>frm_rpt_converting_prod_shift_fast.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_rpt_converting_rewind_fast.cs" />
+    <Compile Include="frm_rpt_converting_rewind_fast.Designer.cs">
+      <DependentUpon>frm_rpt_converting_rewind_fast.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_rpt_po_listing.cs" />
+    <Compile Include="frm_rpt_po_listing.Designer.cs">
+      <DependentUpon>frm_rpt_po_listing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_rpt_procurement_po_pending_del.cs" />
+    <Compile Include="frm_rpt_procurement_po_pending_del.Designer.cs">
+      <DependentUpon>frm_rpt_procurement_po_pending_del.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_rpt_prod_conv_smallrewind.cs" />
+    <Compile Include="frm_rpt_prod_conv_smallrewind.Designer.cs">
+      <DependentUpon>frm_rpt_prod_conv_smallrewind.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_rpt_ribbon_consume.cs" />
+    <Compile Include="frm_rpt_ribbon_consume.Designer.cs">
+      <DependentUpon>frm_rpt_ribbon_consume.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_rpt_ribbon_output.cs" />
+    <Compile Include="frm_rpt_ribbon_output.Designer.cs">
+      <DependentUpon>frm_rpt_ribbon_output.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_prod_coating_printing_bom.cs" />
+    <Compile Include="frm_prod_coating_printing_bom.Designer.cs">
+      <DependentUpon>frm_prod_coating_printing_bom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_rpt_coating_consumption.cs" />
+    <Compile Include="frm_rpt_coating_consumption.Designer.cs">
+      <DependentUpon>frm_rpt_coating_consumption.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_rpt_coating_output_detail.cs" />
+    <Compile Include="frm_rpt_coating_output_detail.Designer.cs">
+      <DependentUpon>frm_rpt_coating_output_detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_rpt_stretch_film_consume.cs" />
+    <Compile Include="frm_rpt_stretch_film_consume.Designer.cs">
+      <DependentUpon>frm_rpt_stretch_film_consume.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_rpt_stretch_film_output.cs" />
+    <Compile Include="frm_rpt_stretch_film_output.Designer.cs">
+      <DependentUpon>frm_rpt_stretch_film_output.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_prod_sales_order.cs" />
+    <Compile Include="frm_prod_sales_order.Designer.cs">
+      <DependentUpon>frm_prod_sales_order.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_rpt_warehouse_bopp_print.cs" />
+    <Compile Include="frm_rpt_warehouse_bopp_print.Designer.cs">
+      <DependentUpon>frm_rpt_warehouse_bopp_print.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_rpt_warehouse_bopp_print_2.cs" />
+    <Compile Include="frm_rpt_warehouse_bopp_print_2.Designer.cs">
+      <DependentUpon>frm_rpt_warehouse_bopp_print_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_rpt_warehouse_fr_checklist.cs" />
+    <Compile Include="frm_rpt_warehouse_fr_checklist.Designer.cs">
+      <DependentUpon>frm_rpt_warehouse_fr_checklist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_sales_order_download.cs" />
+    <Compile Include="frm_sales_order_download.Designer.cs">
+      <DependentUpon>frm_sales_order_download.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_sales_order_upload.cs" />
+    <Compile Include="frm_sales_order_upload.Designer.cs">
+      <DependentUpon>frm_sales_order_upload.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_shipping_calendar.cs" />
+    <Compile Include="frm_shipping_calendar.Designer.cs">
+      <DependentUpon>frm_shipping_calendar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_shipping_calendar_detail.cs" />
+    <Compile Include="frm_shipping_calendar_detail.Designer.cs">
+      <DependentUpon>frm_shipping_calendar_detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_prod_warehouse_fr_receive_pack.cs" />
+    <Compile Include="frm_prod_warehouse_fr_receive_pack.Designer.cs">
+      <DependentUpon>frm_prod_warehouse_fr_receive_pack.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_prod_warehouse_ribbon_received.cs" />
+    <Compile Include="frm_prod_warehouse_ribbon_received.Designer.cs">
+      <DependentUpon>frm_prod_warehouse_ribbon_received.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_rpt_summary_bopp_stock_status.cs" />
+    <Compile Include="frm_rpt_summary_bopp_stock_status.Designer.cs">
+      <DependentUpon>frm_rpt_summary_bopp_stock_status.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ax_stock_status_vm05_bopp.cs" />
+    <Compile Include="frm_ax_stock_status_vm05_bopp.Designer.cs">
+      <DependentUpon>frm_ax_stock_status_vm05_bopp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="frm_prod_coating_grn.cs" />
+    <Compile Include="frm_prod_coating_grn.Designer.cs">
+      <DependentUpon>frm_prod_coating_grn.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frm_admin_factory.resx">
+      <DependentUpon>frm_admin_factory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_ax_item_master.resx">
+      <DependentUpon>frm_ax_item_master.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_ax_stock_status_pm01.resx">
+      <DependentUpon>frm_ax_stock_status_pm01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_ax_stock_status_pm02.resx">
+      <DependentUpon>frm_ax_stock_status_pm02.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_ax_stock_status_pm03.resx">
+      <DependentUpon>frm_ax_stock_status_pm03.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_ax_stock_status_pm04.resx">
+      <DependentUpon>frm_ax_stock_status_pm04.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_ax_stock_status_rm01.resx">
+      <DependentUpon>frm_ax_stock_status_rm01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_ax_stock_status_rm02.resx">
+      <DependentUpon>frm_ax_stock_status_rm02.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_ax_stock_status_sm01.resx">
+      <DependentUpon>frm_ax_stock_status_sm01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_ax_stock_status_sm02.resx">
+      <DependentUpon>frm_ax_stock_status_sm02.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_ax_stock_status_sm03.resx">
+      <DependentUpon>frm_ax_stock_status_sm03.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_ax_stock_status_sm04.resx">
+      <DependentUpon>frm_ax_stock_status_sm04.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_ax_stock_status_sm05.resx">
+      <DependentUpon>frm_ax_stock_status_sm05.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_ax_stock_status_sm06.resx">
+      <DependentUpon>frm_ax_stock_status_sm06.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_ax_stock_status_vm05_bopp.resx">
+      <DependentUpon>frm_ax_stock_status_vm05_bopp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_conv_sales_backorder_due.resx">
+      <DependentUpon>frm_conv_sales_backorder_due.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_conv_so_delivery_next_5days.resx">
+      <DependentUpon>frm_conv_so_delivery_next_5days.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_get_CI_NO.resx">
+      <DependentUpon>frm_get_CI_NO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_get_CI_NO_rpt.resx">
+      <DependentUpon>frm_get_CI_NO_rpt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_main_menu_coating_.resx">
+      <DependentUpon>frm_main_menu_coating_.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_menu_ax_stock_status.resx">
+      <DependentUpon>frm_menu_ax_stock_status.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_menu_planning_coating.resx">
+      <DependentUpon>frm_menu_planning_coating.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_menu_sales.resx">
+      <DependentUpon>frm_menu_sales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_menu_stretch_film.resx">
+      <DependentUpon>frm_menu_stretch_film.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_menu_sub_schwaner.resx">
+      <DependentUpon>frm_menu_sub_schwaner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_messageBox.resx">
+      <DependentUpon>frm_messageBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_messageBox2.resx">
+      <DependentUpon>frm_messageBox2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_process_dialog.resx">
+      <DependentUpon>frm_process_dialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_prod_coating_double_side_print_R2.resx">
+      <DependentUpon>frm_prod_coating_double_side_print_R2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_prod_coating_double_side_r2.resx">
+      <DependentUpon>frm_prod_coating_double_side_r2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_prod_coating_transfer_received.resx">
+      <DependentUpon>frm_prod_coating_transfer_received.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_prod_converting_output_cutting_r2.resx">
+      <DependentUpon>frm_prod_converting_output_cutting_r2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_prod_converting_output_packing_r3.resx">
+      <DependentUpon>frm_prod_converting_output_packing_r3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_prod_converting_output_packing_r4.resx">
+      <DependentUpon>frm_prod_converting_output_packing_r4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_prod_converting_output_packing_r5.resx">
+      <DependentUpon>frm_prod_converting_output_packing_r5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_prod_converting_output_rewinding_open.resx">
+      <DependentUpon>frm_prod_converting_output_rewinding_open.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_prod_converting_output_rewinding_open_r1.resx">
+      <DependentUpon>frm_prod_converting_output_rewinding_open_r1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_prod_converting_output_rewinding_r3.resx">
+      <DependentUpon>frm_prod_converting_output_rewinding_r3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_prod_converting_output_rewinding_r4.resx">
+      <DependentUpon>frm_prod_converting_output_rewinding_r4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_prod_converting_output_shipmark_bal_r1.resx">
+      <DependentUpon>frm_prod_converting_output_shipmark_bal_r1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_prod_converting_output_slitting_packing_r2.resx">
+      <DependentUpon>frm_prod_converting_output_slitting_packing_r2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_prod_converting_output_slitting_permission.resx">
+      <DependentUpon>frm_prod_converting_output_slitting_permission.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_prod_converting_transfer_received.resx">
+      <DependentUpon>frm_prod_converting_transfer_received.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_prod_conv_ax_wl_print_one.resx">
+      <DependentUpon>frm_prod_conv_ax_wl_print_one.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_prod_conv_jr_balance.resx">
+      <DependentUpon>frm_prod_conv_jr_balance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_prod_conv_menu_small_rewinding.resx">
+      <DependentUpon>frm_prod_conv_menu_small_rewinding.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_prod_conv_output_rewinding_popup_yesno.resx">
+      <DependentUpon>frm_prod_conv_output_rewinding_popup_yesno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_prod_conv_po_import.resx">
+      <DependentUpon>frm_prod_conv_po_import.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_prod_conv_po_local.resx">
+      <DependentUpon>frm_prod_conv_po_local.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_prod_conv_po_via_pr.resx">
+      <DependentUpon>frm_prod_conv_po_via_pr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_prod_coating_jo_change_film.resx">
+      <DependentUpon>frm_prod_coating_jo_change_film.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_prod_coating_jo_print.resx">
+      <DependentUpon>frm_prod_coating_jo_print.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_prod_coating_jo_stockcode.resx">
+      <DependentUpon>frm_prod_coating_jo_stockcode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_prod_coating_jo_wip.resx">
+      <DependentUpon>frm_prod_coating_jo_wip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_prod_coating_printing_bom_R1.resx">
+      <DependentUpon>frm_prod_coating_printing_bom_R1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_prod_coat_schwaner_bill_of_material.resx">
+      <DependentUpon>frm_prod_coat_schwaner_bill_of_material.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_prod_coat_schwaner_jo_memo_operator.resx">
+      <DependentUpon>frm_prod_coat_schwaner_jo_memo_operator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_prod_coat_schwaner_jo_memo_rpt.resx">
+      <DependentUpon>frm_prod_coat_schwaner_jo_memo_rpt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_prod_converting_bill_papercore.resx">
+      <DependentUpon>frm_prod_converting_bill_papercore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_prod_converting_jo_r1.resx">
+      <DependentUpon>frm_prod_converting_jo_r1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_prod_converting_jo_swit.resx">
+      <DependentUpon>frm_prod_converting_jo_swit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_prod_converting_output_cutting_r1.resx">
+      <DependentUpon>frm_prod_converting_output_cutting_r1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_prod_converting_output_packing_print.resx">
+      <DependentUpon>frm_prod_converting_output_packing_print.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_prod_converting_output_rewinding_print.resx">
+      <DependentUpon>frm_prod_converting_output_rewinding_print.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_prod_converting_output_rewinding_r1.resx">
+      <DependentUpon>frm_prod_converting_output_rewinding_r1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_prod_converting_output_rewinding_r2.resx">
+      <DependentUpon>frm_prod_converting_output_rewinding_r2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_prod_converting_output_rework.resx">
+      <DependentUpon>frm_prod_converting_output_rework.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_prod_converting_output_rework_popup.resx">
+      <DependentUpon>frm_prod_converting_output_rework_popup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_prod_converting_output_scan.resx">
+      <DependentUpon>frm_prod_converting_output_scan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_prod_converting_output_shipmark_bal.resx">
+      <DependentUpon>frm_prod_converting_output_shipmark_bal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_prod_converting_output_slitting_packing.resx">
+      <DependentUpon>frm_prod_converting_output_slitting_packing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_prod_converting_store_r2.resx">
+      <DependentUpon>frm_prod_converting_store_r2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_prod_coat_schwaner_jo_memo.resx">
+      <DependentUpon>frm_prod_coat_schwaner_jo_memo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_prod_coverting_output_rewinding_check_ bal.resx">
+      <DependentUpon>frm_prod_coverting_output_rewinding_check_ bal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_prod_menu_doubleside_r2.resx">
+      <DependentUpon>frm_prod_menu_doubleside_r2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_prod_rewinding_converting.resx">
+      <DependentUpon>frm_prod_rewinding_converting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_prod_ribbon2.resx">
+      <DependentUpon>frm_prod_ribbon2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_prod_ribbon2_maintenance.resx">
+      <DependentUpon>frm_prod_ribbon2_maintenance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_prod_ribbon2_menu.resx">
+      <DependentUpon>frm_prod_ribbon2_menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_prod_ribbon2_output.resx">
+      <DependentUpon>frm_prod_ribbon2_output.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_prod_ribbon2_print.resx">
+      <DependentUpon>frm_prod_ribbon2_print.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_prod_warehouse_ax_print.resx">
+      <DependentUpon>frm_prod_warehouse_ax_print.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_prod_warehouse_ax_wj303_print_all.resx">
+      <DependentUpon>frm_prod_warehouse_ax_wj303_print_all.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_prod_warehouse_ax_wj303_print_one.resx">
+      <DependentUpon>frm_prod_warehouse_ax_wj303_print_one.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_prod_warehouse_fr_receive_ax.resx">
+      <DependentUpon>frm_prod_warehouse_fr_receive_ax.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_prod_warehouse_sample.resx">
+      <DependentUpon>frm_prod_warehouse_sample.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_prod_warehouse_sample_popup.resx">
+      <DependentUpon>frm_prod_warehouse_sample_popup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_prod_warehouse_stocktransfer.resx">
+      <DependentUpon>frm_prod_warehouse_stocktransfer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_prod_warehouse_stocktransfer_vm.resx">
+      <DependentUpon>frm_prod_warehouse_stocktransfer_vm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_prod_warehouse_transfer_bopp.resx">
+      <DependentUpon>frm_prod_warehouse_transfer_bopp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_prod_warehouse_transfer_jr.resx">
+      <DependentUpon>frm_prod_warehouse_transfer_jr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_prod_warehouse_transfer_mov.resx">
+      <DependentUpon>frm_prod_warehouse_transfer_mov.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_prod_warehouse_transfer_receive.resx">
+      <DependentUpon>frm_prod_warehouse_transfer_receive.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_prod_warehouse_transfer_received.resx">
+      <DependentUpon>frm_prod_warehouse_transfer_received.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_prod_warehouse_transfer_received_fr.resx">
+      <DependentUpon>frm_prod_warehouse_transfer_received_fr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_prod__coating_double_side_popup_r2.resx">
+      <DependentUpon>frm_prod__coating_double_side_popup_r2.Designer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_rpt_coating_capacity.resx">
+      <DependentUpon>frm_rpt_coating_capacity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_rpt_coating_Cgrade.resx">
+      <DependentUpon>frm_rpt_coating_Cgrade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_rpt_coating_output_overweight.resx">
+      <DependentUpon>frm_rpt_coating_output_overweight.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_rpt_coating_output_underweight.resx">
+      <DependentUpon>frm_rpt_coating_output_underweight.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_rpt_converting_jo.resx">
+      <DependentUpon>frm_rpt_converting_jo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_rpt_converting_jr.resx">
+      <DependentUpon>frm_rpt_converting_jr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_rpt_converting_jr_balance.resx">
+      <DependentUpon>frm_rpt_converting_jr_balance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_prod_kliner.resx">
+      <DependentUpon>frm_prod_kliner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_prod_kliner_popup.resx">
+      <DependentUpon>frm_prod_kliner_popup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_prod_stretch_film_popup.resx">
+      <DependentUpon>frm_prod_stretch_film_popup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_prod_warehouse_jr_receive_barcode.resx">
+      <DependentUpon>frm_prod_warehouse_jr_receive_barcode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_menu_management.resx">
+      <DependentUpon>frm_menu_management.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_menu_qac.resx">
+      <DependentUpon>frm_menu_qac.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_prod_converting_grn_film.resx">
+      <DependentUpon>frm_prod_converting_grn_film.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_menu_admin.resx">
+      <DependentUpon>frm_menu_admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_menu_coating.resx">
+      <DependentUpon>frm_menu_coating.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_menu_converting.resx">
+      <DependentUpon>frm_menu_converting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_menu_glue.resx">
+      <DependentUpon>frm_menu_glue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_menu_kliner.resx">
+      <DependentUpon>frm_menu_kliner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_menu_packing_list.resx">
+      <DependentUpon>frm_menu_packing_list.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_menu_papercore.resx">
+      <DependentUpon>frm_menu_papercore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_menu_planning_converting.resx">
+      <DependentUpon>frm_menu_planning_converting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_menu_main.resx">
+      <DependentUpon>frm_menu_main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_menu_planning.resx">
+      <DependentUpon>frm_menu_planning.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_menu_ribbon.resx">
+      <DependentUpon>frm_menu_ribbon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_menu_system.resx">
+      <DependentUpon>frm_menu_system.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_menu_system_user_access.resx">
+      <DependentUpon>frm_menu_system_user_access.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_admin.resx">
+      <DependentUpon>frm_admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_menu_warehouse.resx">
+      <DependentUpon>frm_menu_warehouse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_prod_coating_net_weight.resx">
+      <DependentUpon>frm_prod_coating_net_weight.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_prod_coating_net_wet_calculation.resx">
+      <DependentUpon>frm_prod_coating_net_wet_calculation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_prod_warehouse_kliner_received.resx">
+      <DependentUpon>frm_prod_warehouse_kliner_received.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_prod_warehouse_stretch_film_received.resx">
+      <DependentUpon>frm_prod_warehouse_stretch_film_received.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_rpt_converting_cutting.resx">
+      <DependentUpon>frm_rpt_converting_cutting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_rpt_converting_cutting_detail.resx">
+      <DependentUpon>frm_rpt_converting_cutting_detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_rpt_converting_cutting_fast.resx">
+      <DependentUpon>frm_rpt_converting_cutting_fast.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_rpt_converting_cutting_shift_fast.resx">
+      <DependentUpon>frm_rpt_converting_cutting_shift_fast.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_rpt_converting_jr_balance_jrstockcode.resx">
+      <DependentUpon>frm_rpt_converting_jr_balance_jrstockcode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_rpt_converting_jr_balance_lr.resx">
+      <DependentUpon>frm_rpt_converting_jr_balance_lr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_rpt_converting_jr_balance_r2.resx">
+      <DependentUpon>frm_rpt_converting_jr_balance_r2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_rpt_converting_pack.resx">
+      <DependentUpon>frm_rpt_converting_pack.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_rpt_converting_packing_list_fr.resx">
+      <DependentUpon>frm_rpt_converting_packing_list_fr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_rpt_converting_packing_list_jr.resx">
+      <DependentUpon>frm_rpt_converting_packing_list_jr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_rpt_converting_pack_fast.resx">
+      <DependentUpon>frm_rpt_converting_pack_fast.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_rpt_converting_prod_detail_2.resx">
+      <DependentUpon>frm_rpt_converting_prod_detail_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_rpt_converting_prod_detail_3.resx">
+      <DependentUpon>frm_rpt_converting_prod_detail_3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_rpt_converting_progress.resx">
+      <DependentUpon>frm_rpt_converting_progress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_rpt_converting_progress_r1.resx">
+      <DependentUpon>frm_rpt_converting_progress_r1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_rpt_converting_progress_r3.resx">
+      <DependentUpon>frm_rpt_converting_progress_r3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_rpt_converting_rewind.resx">
+      <DependentUpon>frm_rpt_converting_rewind.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_rpt_converting_rewind_detail.resx">
+      <DependentUpon>frm_rpt_converting_rewind_detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_rpt_converting_rewind_fast.resx">
+      <DependentUpon>frm_rpt_converting_rewind_fast.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_rpt_converting_rewind_shift_fast.resx">
+      <DependentUpon>frm_rpt_converting_rewind_shift_fast.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_rpt_converting_tracking.resx">
+      <DependentUpon>frm_rpt_converting_tracking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_rpt_converting_tracking_r1.resx">
+      <DependentUpon>frm_rpt_converting_tracking_r1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_rpt_conv_backorder.resx">
+      <DependentUpon>frm_rpt_conv_backorder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_rpt_glue_consume.resx">
+      <DependentUpon>frm_rpt_glue_consume.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_rpt_glue_consume_stockcode.resx">
+      <DependentUpon>frm_rpt_glue_consume_stockcode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_rpt_glue_output.resx">
+      <DependentUpon>frm_rpt_glue_output.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_rpt_kliner_consume.resx">
+      <DependentUpon>frm_rpt_kliner_consume.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_rpt_kliner_output.resx">
+      <DependentUpon>frm_rpt_kliner_output.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_rpt_papercore_consume.resx">
+      <DependentUpon>frm_rpt_papercore_consume.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_rpt_coating_Bgrade.resx">
+      <DependentUpon>frm_rpt_coating_Bgrade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_rpt_coating_check_jrshipmark.resx">
+      <DependentUpon>frm_rpt_coating_check_jrshipmark.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_rpt_coating_check_saleorder.resx">
+      <DependentUpon>frm_rpt_coating_check_saleorder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_rpt_coating_local.resx">
+      <DependentUpon>frm_rpt_coating_local.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_rpt_coating_output.resx">
+      <DependentUpon>frm_rpt_coating_output.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_rpt_coating_output_detail.resx">
+      <DependentUpon>frm_rpt_coating_output_detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_rpt_coating_output_detail_jo.resx">
+      <DependentUpon>frm_rpt_coating_output_detail_jo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_rpt_coating_wastage.resx">
+      <DependentUpon>frm_rpt_coating_wastage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_prod_coating_double_side.resx">
+      <DependentUpon>frm_prod_coating_double_side.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_prod_coating_jo.resx">
+      <DependentUpon>frm_prod_coating_jo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_prod_coating_jo_printing.resx">
+      <DependentUpon>frm_prod_coating_jo_printing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_prod_coating_schwaner.resx">
+      <DependentUpon>frm_prod_coating_schwaner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_prod_coating_store.resx">
+      <DependentUpon>frm_prod_coating_store.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_prod_converting_bill.resx">
+      <DependentUpon>frm_prod_converting_bill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_prod_converting_jo.resx">
+      <DependentUpon>frm_prod_converting_jo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_prod_converting_jo_print.resx">
+      <DependentUpon>frm_prod_converting_jo_print.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_prod_converting_store.resx">
+      <DependentUpon>frm_prod_converting_store.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_prod_converting_output_cutting.resx">
+      <DependentUpon>frm_prod_converting_output_cutting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_prod_converting_output_packing.resx">
+      <DependentUpon>frm_prod_converting_output_packing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_prod_converting_output_papercore.resx">
+      <DependentUpon>frm_prod_converting_output_papercore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_prod_converting_output_rewinding.resx">
+      <DependentUpon>frm_prod_converting_output_rewinding.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_prod_converting_output_slitting.resx">
+      <DependentUpon>frm_prod_converting_output_slitting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_prod_converting_jo_progress.resx">
+      <DependentUpon>frm_prod_converting_jo_progress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_prod_converting_jo_tracking.resx">
+      <DependentUpon>frm_prod_converting_jo_tracking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_prod_glue.resx">
+      <DependentUpon>frm_prod_glue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_prod_glue_popup.resx">
+      <DependentUpon>frm_prod_glue_popup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_prod_papercore.resx">
+      <DependentUpon>frm_prod_papercore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_prod_papercore_popup.resx">
+      <DependentUpon>frm_prod_papercore_popup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_prod_ribbon.resx">
+      <DependentUpon>frm_prod_ribbon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_prod_ribbon_popup.resx">
+      <DependentUpon>frm_prod_ribbon_popup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_prod_shipping.resx">
+      <DependentUpon>frm_prod_shipping.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_prod_stretch_film.resx">
+      <DependentUpon>frm_prod_stretch_film.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_rpt_converting_pack_detail.resx">
+      <DependentUpon>frm_rpt_converting_pack_detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_rpt_converting_pack_shift_fast.resx">
+      <DependentUpon>frm_rpt_converting_pack_shift_fast.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_rpt_converting_prod.resx">
+      <DependentUpon>frm_rpt_converting_prod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_rpt_converting_prod_detail.resx">
+      <DependentUpon>frm_rpt_converting_prod_detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_rpt_converting_prod_fast.resx">
+      <DependentUpon>frm_rpt_converting_prod_fast.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_rpt_converting_prod_shift_fast.resx">
+      <DependentUpon>frm_rpt_converting_prod_shift_fast.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_rpt_papercore_output.resx">
+      <DependentUpon>frm_rpt_papercore_output.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_rpt_po_listing.resx">
+      <DependentUpon>frm_rpt_po_listing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_rpt_procurement.resx">
+      <DependentUpon>frm_rpt_procurement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_rpt_procurement_po_pending_del.resx">
+      <DependentUpon>frm_rpt_procurement_po_pending_del.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_rpt_prod_conv_smallrewind.resx">
+      <DependentUpon>frm_rpt_prod_conv_smallrewind.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_rpt_ribbon_consume.resx">
+      <DependentUpon>frm_rpt_ribbon_consume.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_rpt_ribbon_output.resx">
+      <DependentUpon>frm_rpt_ribbon_output.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_prod_coating_printing_bom.resx">
+      <DependentUpon>frm_prod_coating_printing_bom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_rpt_coating_consumption.resx">
+      <DependentUpon>frm_rpt_coating_consumption.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_prod_coating_grn.resx">
+      <DependentUpon>frm_prod_coating_grn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_rpt_stretch_film_consume.resx">
+      <DependentUpon>frm_rpt_stretch_film_consume.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_rpt_stretch_film_output.resx">
+      <DependentUpon>frm_rpt_stretch_film_output.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_prod_sales_order.resx">
+      <DependentUpon>frm_prod_sales_order.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_rpt_summary_bopp_stock_status.resx">
+      <DependentUpon>frm_rpt_summary_bopp_stock_status.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_rpt_warehouse_bopp_print.resx">
+      <DependentUpon>frm_rpt_warehouse_bopp_print.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_rpt_warehouse_bopp_print_2.resx">
+      <DependentUpon>frm_rpt_warehouse_bopp_print_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_rpt_warehouse_fr_checklist.resx">
+      <DependentUpon>frm_rpt_warehouse_fr_checklist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_sales_order_download.resx">
+      <DependentUpon>frm_sales_order_download.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_sales_order_upload.resx">
+      <DependentUpon>frm_sales_order_upload.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_shipping_calendar.resx">
+      <DependentUpon>frm_shipping_calendar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_shipping_calendar_detail.resx">
+      <DependentUpon>frm_shipping_calendar_detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_prod_warehouse_fr_receive_pack.resx">
+      <DependentUpon>frm_prod_warehouse_fr_receive_pack.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_prod_warehouse_ribbon_received.resx">
+      <DependentUpon>frm_prod_warehouse_ribbon_received.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="form_sales_order_dept.aspx" />
+    <None Include="form_sales_order_dept.aspx.vb" />
+    <None Include="packages.config" />
+    <None Include="planning_jo_converting_2.rdl">
+      <DependentUpon>frm_prod_stretch_film_popup.cs</DependentUpon>
+    </None>
+    <None Include="report\planning_jo_converting_2.rdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="report" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "Production Consumption4", "Production Consumption4\Production Consumption4.rptproj", "{ACA52455-4B68-453F-B3B8-FCD6F15B784A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		DebugLocal|Default = DebugLocal|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ACA52455-4B68-453F-B3B8-FCD6F15B784A}.Debug|Default.ActiveCfg = Debug
+		{ACA52455-4B68-453F-B3B8-FCD6F15B784A}.Debug|Default.Build.0 = DebugLocal
+		{ACA52455-4B68-453F-B3B8-FCD6F15B784A}.Debug|Default.Deploy.0 = DebugLocal
+		{ACA52455-4B68-453F-B3B8-FCD6F15B784A}.DebugLocal|Default.ActiveCfg = DebugLocal
+		{ACA52455-4B68-453F-B3B8-FCD6F15B784A}.DebugLocal|Default.Build.0 = DebugLocal
+		{ACA52455-4B68-453F-B3B8-FCD6F15B784A}.Release|Default.ActiveCfg = Release
+		{ACA52455-4B68-453F-B3B8-FCD6F15B784A}.Release|Default.Build.0 = Release
+		{ACA52455-4B68-453F-B3B8-FCD6F15B784A}.Release|Default.Deploy.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

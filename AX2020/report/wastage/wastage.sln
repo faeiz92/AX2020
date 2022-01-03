@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "wastage", "wastage\wastage.rptproj", "{ADA7DCBD-E52B-4552-A648-C7CC875141E5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		DebugLocal|Default = DebugLocal|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ADA7DCBD-E52B-4552-A648-C7CC875141E5}.Debug|Default.ActiveCfg = Debug
+		{ADA7DCBD-E52B-4552-A648-C7CC875141E5}.Debug|Default.Build.0 = DebugLocal
+		{ADA7DCBD-E52B-4552-A648-C7CC875141E5}.Debug|Default.Deploy.0 = DebugLocal
+		{ADA7DCBD-E52B-4552-A648-C7CC875141E5}.DebugLocal|Default.ActiveCfg = DebugLocal
+		{ADA7DCBD-E52B-4552-A648-C7CC875141E5}.DebugLocal|Default.Build.0 = DebugLocal
+		{ADA7DCBD-E52B-4552-A648-C7CC875141E5}.Release|Default.ActiveCfg = Release
+		{ADA7DCBD-E52B-4552-A648-C7CC875141E5}.Release|Default.Build.0 = Release
+		{ADA7DCBD-E52B-4552-A648-C7CC875141E5}.Release|Default.Deploy.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
